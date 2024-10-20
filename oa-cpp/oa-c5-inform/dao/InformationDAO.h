@@ -19,10 +19,12 @@
 #ifndef _INFORMATIONDAO_H_
 #define _INFORMATIONDAO_H_
 #include "BaseDAO.h"
+#include"../domain/GlobalInclude.h"
 
 class InformationDAO : public BaseDAO
 {
+public:
+    list<InformationUnconsumedMessageDO> selectByName(const string&);
 
 };
-
 #endif // !_INFORMATIONDAO_H_

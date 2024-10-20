@@ -20,35 +20,44 @@
 #include "InformationService.h"
 #include "../dao/InformationDAO.h"
 
-InformationUnconsumedMessageDTO::Wrapper InformationUnconsumedMessageService::listAll(const InformationUnconsumedMessageQuery::Wrapper& query)
+InformationUnconsumedMessagePageDTO::Wrapper InformationService::listAll(const InformationUnconsumedMessageQuery::Wrapper& query)
 {
 	//// 构建返回对象
-	//auto messages = InformationUnconsumedMessagePageDTO::createShared();
-	////messages->
-	//// 查询数据总条数
-	//InformationDAO dao;
-	//uint64_t count = dao.count(query);
-	//if (count <= 0)
-	//{
-	//	return pages;
-	//}
+	auto messages = InformationUnconsumedMessagePageDTO::createShared();
+	
+	InformationDAO dao;
 
 	//// 分页查询数据
 	//pages->total = count;
 	//pages->calcPages();
-	//list<SampleDO> result = dao.selectWithPage(query);
-	//// 将DO转换成DTO
-	//for (SampleDO sub : result)
-	//{
-	//	auto dto = SampleDTO::createShared();
-	//	// 		dto->id = sub.getId();
-	//	// 		dto->name = sub.getName();
-	//	// 		dto->sex = sub.getSex();
-	//	// 		dto->age = sub.getAge();
-	//	ZO_STAR_DOMAIN_DO_TO_DTO(dto, sub, id, Id, name, Name, sex, Sex, age, Age)
-	//		pages->addData(dto);
-
-	//}
-	//return pages;
-	return nullptr;
+	list<InformationUnconsumedMessageDO> result = dao.selectByName(query->name);
+	cout <<endl<< result.size();
+	// 将DO转换成DTO
+	for (InformationUnconsumedMessageDO sub : result)
+	{
+		auto dto = InformationUnconsumedMessageDTO::createShared();
+		// 		dto->id = sub.getId();
+		// 		dto->name = sub.getName();
+		// 		dto->sex = sub.getSex();
+		// 		dto->age = sub.getAge();
+		ZO_STAR_DOMAIN_DO_TO_DTO(dto, sub, id, id, 
+			                               createTime,createTime,
+			                               sequence, sequence,
+			                               updateTime, updateTime,
+			                               distributeFactor, distributeFactor,
+			                               body,body,
+			                               consumed,consumed,
+			                               consumer,consumer,
+			                               instant,instant,
+			                               person,person,
+			                               properties, properties,
+			                               title,title,
+			                               type,type);
+		cout << sub.getid() << endl;
+		cout << sub.getcreateTime() << endl;
+		cout << sub.getsequence() << endl;
+		cout << sub.getupdateTime() << endl;
+		messages->addData(dto);
+	}
+	return messages;
 }

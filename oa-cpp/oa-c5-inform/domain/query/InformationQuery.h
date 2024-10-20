@@ -28,9 +28,9 @@
 /**
  * 示例分页查询对象
  */
-class InformationUnconsumedMessageQuery : public PageQuery
+class InformationUnconsumedMessageQuery : public oatpp::DTO
 {
-	DTO_INIT(InformationUnconsumedMessageQuery, PageQuery);
+	DTO_INIT(InformationUnconsumedMessageQuery, DTO);
 	// 姓名
 	DTO_FIELD(String, name);
 	DTO_FIELD_INFO(name) {

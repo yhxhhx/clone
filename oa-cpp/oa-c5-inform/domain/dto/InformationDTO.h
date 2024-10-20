@@ -16,8 +16,8 @@
  See the License for the specific language governing permissions and
  limitations under the License.
 */
-#ifndef _INFORMATIONDTO_H_
-#define _INFORMATIONDTO_H_
+#ifndef _INFORMATION_DTO_H_
+#define _INFORMATION_DTO_H_
 
 #include "../GlobalInclude.h"
 
@@ -32,10 +32,10 @@ class InformationUnconsumedMessageDTO : public oatpp::DTO
     DTO_FIELD_INFO(id) {
         info->description = ZH_WORDS_GETTER("Information.field.id");
     }
-	DTO_FIELD(Int64, name);
-	DTO_FIELD_INFO(name) {
-		info->description = ZH_WORDS_GETTER("Information.field.name");
-	}
+	//DTO_FIELD(Int64, name);
+	//DTO_FIELD_INFO(name) {
+	//	info->description = ZH_WORDS_GETTER("Information.field.name");
+	//}
 	DTO_FIELD(String, createTime);
 	DTO_FIELD_INFO(createTime) {
 		info->description = ZH_WORDS_GETTER("Information.field.createTime");
@@ -56,7 +56,7 @@ class InformationUnconsumedMessageDTO : public oatpp::DTO
 	DTO_FIELD_INFO(body) {
 		info->description = ZH_WORDS_GETTER("Information.field.body");
 	}
-	DTO_FIELD(String, consumed);
+	DTO_FIELD(oatpp::Boolean, consumed);
 	DTO_FIELD_INFO(consumed) {
 		info->description = ZH_WORDS_GETTER("Information.field.consumed");
 	}
@@ -72,9 +72,9 @@ class InformationUnconsumedMessageDTO : public oatpp::DTO
 	DTO_FIELD_INFO(person) {
 		info->description = ZH_WORDS_GETTER("Information.field.person");
 	}
-	DTO_FIELD(String, properities);
-	DTO_FIELD_INFO(properities) {
-		info->description = ZH_WORDS_GETTER("Information.field.properities");
+	DTO_FIELD(String, properties);
+	DTO_FIELD_INFO(properties) {
+		info->description = ZH_WORDS_GETTER("Information.field.properties");
 	}
 	DTO_FIELD(String, title);
 	DTO_FIELD_INFO(title) {
@@ -84,8 +84,8 @@ class InformationUnconsumedMessageDTO : public oatpp::DTO
 	DTO_FIELD_INFO(type) {
 		info->description = ZH_WORDS_GETTER("Information.field.type");
 	}
-};
 
+};
 
 /**
  * 示例分页传输对象
@@ -95,6 +95,7 @@ class InformationUnconsumedMessagePageDTO : public PageDTO<InformationUnconsumed
 	DTO_INIT(InformationUnconsumedMessagePageDTO, PageDTO<InformationUnconsumedMessageDTO::Wrapper>);
 };
 
+
 #include OATPP_CODEGEN_END(DTO)
 
-#endif // !_INFORMATIONDTO_H_
+#endif // !_INFORMATION_DTO_H_

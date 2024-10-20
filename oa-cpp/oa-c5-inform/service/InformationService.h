@@ -27,11 +27,11 @@
 /**
  * 示例服务实现，演示基础的示例服务实现
  */
-class InformationUnconsumedMessageService
+class InformationService
 {
 public:
 	// 分页查询所有数据
-	InformationUnconsumedMessageDTO::Wrapper listAll(const InformationUnconsumedMessageQuery::Wrapper& query);
+	InformationUnconsumedMessagePageDTO::Wrapper listAll(const InformationUnconsumedMessageQuery::Wrapper& query);
 	// 保存数据
 	//uint64_t saveData(const SampleDTO::Wrapper& dto);
 	// 修改数据

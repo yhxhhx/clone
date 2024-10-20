@@ -2,11 +2,11 @@
 
 InformationUnconsumedMessagePageJsonVO::Wrapper InformationController::execQueryUnconsumedMessage(const InformationUnconsumedMessageQuery::Wrapper& query) {
 	// 定义一个Service
-	InformationUnconsumedMessageService service;
+	InformationService service;
 	// 查询数据
-	//auto result = service.listAll(query);
+	auto result = service.listAll(query);
 	// 响应结果
 	auto jvo = InformationUnconsumedMessagePageJsonVO::createShared();
-	//jvo->success("heh");
+	jvo->success(result);
 	return jvo;
 }

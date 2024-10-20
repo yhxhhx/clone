@@ -56,7 +56,7 @@ public: // 定义接口
 		// 定义接口标题
 		API_DEF_ADD_TITLE(ZH_WORDS_GETTER("Information.get.modifyMessageStatus"));
 		// 定义响应参数格式
-		API_DEF_ADD_RSP_JSON_WRAPPER(InformationUnconsumedMessagePageJsonVO);
+		API_DEF_ADD_RSP_JSON_WRAPPER(InformationUnconsumedMessageJsonVO);
 		// 定义其他查询参数描述
 		API_DEF_ADD_QUERY_PARAMS(String, "id", ZH_WORDS_GETTER("Information.field.name"), "1", false);
 		API_DEF_ADD_QUERY_PARAMS(String, "consumed", ZH_WORDS_GETTER("Information.field.consumed"), "1", false);
@@ -71,7 +71,7 @@ public: // 定义接口
 
 private: // 定义接口执行函数
     //
-    InformationUnconsumedMessagePageJsonVO::Wrapper execQueryUnconsumedMessage(const InformationUnconsumedMessageQuery::Wrapper& query);
+	InformationUnconsumedMessagePageJsonVO::Wrapper execQueryUnconsumedMessage(const InformationUnconsumedMessageQuery::Wrapper& query);
 
 };
 
