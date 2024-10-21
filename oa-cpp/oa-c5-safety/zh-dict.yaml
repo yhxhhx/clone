@@ -1,0 +1,6 @@
+login:
+ post:
+  summary: 保存登陆配置
+ field:
+  usrname: 登录名
+  usrpw: 登陆密码
