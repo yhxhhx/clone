@@ -4,7 +4,6 @@
 #define _WSINSTANCELISTENER_H_
 #include "oatpp-websocket/ConnectionHandler.hpp"
 #include "oatpp-websocket/WebSocket.hpp"
-#include <map>
 
 /**
  * 定义WS实例监听器
@@ -18,10 +17,7 @@ public:
 	 * 连接客户端的计数器
 	 */
 	static std::atomic<v_int32> SOCKETS;
-	// 定义一个连接对象池
-	std::map<std::string, const WebSocket*> conn_pool;
-	// 定义一个锁对象
-	std::mutex instance_mutex;
+
 public:
 	// 当socket实例创建时调用
 	void onAfterCreate(const WebSocket& socket, const std::shared_ptr<const ParameterMap>& params) override;
