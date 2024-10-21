@@ -20,6 +20,15 @@
 #ifndef _OTHERCOMMPONENT_H_
 #define _OTHERCOMMPONENT_H_
 #include "AbstractComponentReg.h"
+#include "oatpp-websocket/ConnectionHandler.hpp"
+#include "controller/WebSocket/WSInstanceListener.h"
+#include "oatpp/web/client/HttpRequestExecutor.hpp"
+#include "oatpp/network/tcp/client/ConnectionProvider.hpp"
+#include "oatpp/web/server/HttpConnectionHandler.hpp"
+#include "oatpp/web/server/HttpRouter.hpp"
+#include "oatpp/network/tcp/server/ConnectionProvider.hpp"
+#include "oatpp/parser/json/mapping/ObjectMapper.hpp"
+#include "oatpp/core/macro/component.hpp"
 
 #ifdef HTTP_SERVER_DEMO
 #include "oatpp-websocket/ConnectionHandler.hpp"
@@ -29,25 +38,31 @@
 #endif
 
 /**
- * ÆäËüOatpp×é¼ş×¢²á¸½¼ş£¬ºóĞøÈç¹ûĞèÒª¸½¼ÓÆäËü×é¼ş¿ÉÒÔÔÚÕâÀï½øĞĞÍâ²¿¶¨Òå
+ * å…¶å®ƒOatppç»„ä»¶æ³¨å†Œé™„ä»¶ï¼Œåç»­å¦‚æœéœ€è¦é™„åŠ å…¶å®ƒç»„ä»¶å¯ä»¥åœ¨è¿™é‡Œè¿›è¡Œå¤–éƒ¨å®šä¹‰
  */
 class OtherComponent : public AbstractComponentReg
 {
 #ifdef HTTP_SERVER_DEMO
-	// ¶¨ÒåÒ»¸öWebSocket×é¼şÓÃÓÚÑİÊ¾WebSocketµÄÊ¹ÓÃ
+	// å®šä¹‰ä¸€ä¸ªWebSocketç»„ä»¶ç”¨äºæ¼”ç¤ºWebSocketçš„ä½¿ç”¨
 	OATPP_CREATE_COMPONENT(std::shared_ptr<oatpp::network::ConnectionHandler>, websocketConnectionHandler)("websocket", [] {
 		auto connectionHandler = oatpp::websocket::ConnectionHandler::createShared();
 		connectionHandler->setSocketInstanceListener(std::make_shared<WSInstanceListener>());
 		return connectionHandler;
 		}());
-	// ¶¨ÒåÒ»¸öÊ¾ÀıRequestExecutor×é¼şÓÃÓÚ·¢ËÍapiÇëÇó
+	// å®šä¹‰ä¸€ä¸ªç¤ºä¾‹RequestExecutorç»„ä»¶ç”¨äºå‘é€apiè¯·æ±‚
 	OATPP_CREATE_COMPONENT(std::shared_ptr<oatpp::web::client::HttpRequestExecutor>, sampleApiExecutor)("sample-api", [] {
 		auto connectionProvider = oatpp::network::tcp::client::ConnectionProvider::createShared({ "192.168.31.99", 10100 });
 		return oatpp::web::client::HttpRequestExecutor::createShared(connectionProvider);
 		}());
 #endif
-	// #TIP: ÏîÄ¿ÖĞĞèÒª×¢²áÆäËû×é¼şÔÚÏÂÃæÊéĞ´×é¼ş×¢²á´úÂë
+	// #TIP: é¡¹ç›®ä¸­éœ€è¦æ³¨å†Œå…¶ä»–ç»„ä»¶åœ¨ä¸‹é¢ä¹¦å†™ç»„ä»¶æ³¨å†Œä»£ç 
 
+	// å®šä¹‰ä¸€ä¸ªWebSocketç»„ä»¶
+	OATPP_CREATE_COMPONENT(std::shared_ptr<oatpp::network::ConnectionHandler>, websocketConnectionHandler)("WebSocket", [] {
+		auto connectionHandler = oatpp::websocket::ConnectionHandler::createShared();
+		connectionHandler->setSocketInstanceListener(std::make_shared<WSInstanceListener>());
+		return connectionHandler;
+		}());
 };
 
 #endif // _OTHERCOMMPONENT_H_
