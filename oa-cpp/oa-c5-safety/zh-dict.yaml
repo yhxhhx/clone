@@ -1,6 +1,28 @@
 login:
  post:
   summary: 保存登陆配置
- field:
-  usrname: 登录名
-  usrpw: 登陆密码
+ base:
+  image: 启用图片验证码登录
+  text: 启用短信验证码登录
+  double: 启用双因素认证登录
+  QRCode: 启用扫描二维码登录
+  auto: 启用自助注册
+  doorlogin: 使用门户页面登录
+  doorpage: 使用门户页面作为系统首页
+ more:
+  off: 启用安全注销
+  times: 登陆错误次数上限
+  time: 登陆错误锁定时长
+  pctime: pc端登陆有效时长
+  apptime: app端登录有效时长
+  token: token名称
+  code: 启用超级管理员口令
+  HttpOnly: 启用Cookie HttpOnly
+  Secure: 启用Cookie Secure
+ Ldap:
+  ldap: 启用ldap认证
+  addre: Ldap地址
+  BaseDN: LDAP查询根
+  nature: 认证用户绑定属性
+  user: 绑定管理用户
+  password: 管理用户密码
