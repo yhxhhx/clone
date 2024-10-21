@@ -46,3 +46,12 @@ templet:
    route: 校验路由
    roam: 流传校验
    other: 校验其他流转方式
+ add:
+  field:
+   name: 模板名称
+   classify: 模板分类
+   describe: 模板描述
+ remove:
+  field:
+   confirm: 确认是否删除表单
+   name: 表单模板名称

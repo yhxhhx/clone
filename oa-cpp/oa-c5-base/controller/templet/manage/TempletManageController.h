@@ -1,7 +1,7 @@
 #pragma once
 
-#ifndef  _TEMPLETMANAGE_H_
-#define  _TEMPLETMANAGE_H_
+#ifndef  _TEMPLETMANAGECONTROLLER_H_
+#define  _TEMPLETMANAGECONTROLLER_H_
 
 #include "domain/vo/BaseJsonVO.h"
 #include "../../../domain/dto/templet/change/TempletChangeDTO.h"
@@ -28,4 +28,4 @@ private: // 定义接口执行函数
 
 #include OATPP_CODEGEN_END(ApiController)
 
-#endif // ! _TEMPLETMANAGE_H_
+#endif // ! _TEMPLETMANAGECONTROLLER_H_
