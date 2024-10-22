@@ -8,3 +8,11 @@ list<InformationUnconsumedMessageDO> InformationDAO::selectByName(const string& 
 	InformationUnconsumedMessageMapper mapper;
 	return sqlSession->executeQuery<InformationUnconsumedMessageDO, InformationUnconsumedMessageMapper>(sql, mapper,"%s",name);
 }
+
+
+int InformationDAO::modifyMessageStatus(const InformationMessageStatusModifyDO& DO)
+{
+	string sql = "update msg_message set xconsumed=? where xid=? AND xperson =?";
+	cout << DO.getconsumed() << ' ' << DO.getid() << ' ' << DO.getperson() << endl;
+	return sqlSession->executeUpdate(sql, "%d%d%s", DO.getconsumed(), DO.getid(), DO.getperson());
+}

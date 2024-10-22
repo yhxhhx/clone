@@ -21,6 +21,7 @@
 
 //#include "domain/BaseJsonVO.h"
 #include"../domain/query/InformationQuery.h"
+#include "domain/vo/BaseJsonVO.h"
 #include"../service/InformationService.h"
 #include"../domain/dto/InformationDTO.h"
 #include"../domain/vo/InformationVO.h"
@@ -56,23 +57,36 @@ public: // 定义接口
 		// 定义接口标题
 		API_DEF_ADD_TITLE(ZH_WORDS_GETTER("Information.get.modifyMessageStatus"));
 		// 定义响应参数格式
-		API_DEF_ADD_RSP_JSON_WRAPPER(InformationUnconsumedMessageJsonVO);
+		API_DEF_ADD_RSP_JSON_WRAPPER(Uint64JsonVO);
 		// 定义其他查询参数描述
-		API_DEF_ADD_QUERY_PARAMS(String, "id", ZH_WORDS_GETTER("Information.field.name"), "1", false);
-		API_DEF_ADD_QUERY_PARAMS(String, "consumed", ZH_WORDS_GETTER("Information.field.consumed"), "1", false);
+		API_DEF_ADD_QUERY_PARAMS(String, "name", ZH_WORDS_GETTER("Information.field.name"), "1", false);
+		API_DEF_ADD_QUERY_PARAMS(String, "id", ZH_WORDS_GETTER("Information.field.id"), "1", false);
+		API_DEF_ADD_QUERY_PARAMS(Boolean, "consumed", ZH_WORDS_GETTER("Information.field.consumed"), "1", false);
 	}
     //修改信息状态ENDPOINT
-	ENDPOINT(API_M_POST, "/information/modify_message_status", modify_message_status, QUERIES(QueryParams, queryParams))
+	ENDPOINT(API_M_POST, "/information/modify_message_status", modify_message_status, BODY_DTO(InformationMessageStatusModifyDTO::Wrapper,dto))
 	{
 		//
-		return createResponse(Status::CODE_200, "OK");
+		API_HANDLER_RESP_VO(execMessageStatusModify(dto));
 	}
+
     //参数描述
+	ENDPOINT_INFO(login_config) {
+		API_DEF_ADD_TITLE(ZH_WORDS_GETTER("Login.Basic_configuration.login_config"));
+		API_DEF_ADD_RSP_JSON_WRAPPER(LoginConfigJsonVO);
+	}
+	ENDPOINT(API_M_GET, "/safety/login_config",login_config)
+	{
+		//
+		//API_HANDLER_RESP_VO(execMessageStatusModify(dto));
+		return createResponse(Status::CODE_200, "ok");
+	}
 
 private: // 定义接口执行函数
     //
 	InformationUnconsumedMessagePageJsonVO::Wrapper execQueryUnconsumedMessage(const InformationUnconsumedMessageQuery::Wrapper& query);
-
+	Uint64JsonVO::Wrapper execMessageStatusModify(const InformationMessageStatusModifyDTO::Wrapper& dto);
+	LoginConfigJsonVO::Wrapper execLoginConfig();
 };
 
 #include OATPP_CODEGEN_END(ApiController)

@@ -87,6 +87,36 @@ class InformationUnconsumedMessageDTO : public oatpp::DTO
 
 };
 
+class InformationMessageStatusModifyDTO :public oatpp::DTO {
+	DTO_INIT(InformationMessageStatusModifyDTO, DTO);
+	
+	DTO_FIELD(String, name);
+	DTO_FIELD_INFO(name) {
+		info->description = ZH_WORDS_GETTER("Information.field.name");
+	}
+	DTO_FIELD(Int64, id);
+	DTO_FIELD_INFO(id) {
+		info->description = ZH_WORDS_GETTER("Information.field.id");
+	}
+	DTO_FIELD(oatpp::Boolean, target_status);
+	DTO_FIELD_INFO(target_status) {
+		info->description = ZH_WORDS_GETTER("Information.field.target_status");
+	}
+};
+
+class LoginConfigDTO : public oatpp::DTO {
+	DTO_INIT(LoginConfigDTO, DTO);
+	
+	DTO_FIELD(Boolean,enable_image_verification_codes);
+	DTO_FIELD(Boolean, enable_SMS_verification_codes);
+	DTO_FIELD(Boolean, enable_Two_factor_authentication);
+	DTO_FIELD(Boolean, enable_scan_QR_code);
+	DTO_FIELD(String, enable_auto_enrollment);
+	DTO_FIELD(Boolean, enable_portal_page);
+	DTO_FIELD(Boolean, enable_portal_page_as_the_home_of_the_system);
+
+};
+
 /**
  * 示例分页传输对象
  */
@@ -94,6 +124,7 @@ class InformationUnconsumedMessagePageDTO : public PageDTO<InformationUnconsumed
 {
 	DTO_INIT(InformationUnconsumedMessagePageDTO, PageDTO<InformationUnconsumedMessageDTO::Wrapper>);
 };
+
 
 
 #include OATPP_CODEGEN_END(DTO)

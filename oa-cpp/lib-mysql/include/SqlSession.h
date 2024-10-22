@@ -304,7 +304,6 @@ public:
 			res = pstmt->executeQuery();
 			//4 处理查询结果
 			while (res->next()) {
-				cout << 1;
 				list.push_back(mapper.mapper(res));
 			}
 			//5 释放资源

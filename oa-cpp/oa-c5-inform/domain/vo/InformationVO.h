@@ -26,17 +26,21 @@
 #include OATPP_CODEGEN_BEGIN(DTO)
 
 /**
- * 示例显示JsonVO，用于响应给客户端的Json对象
+ * 未读消息显示JsonVO，用于响应给客户端的Json对象
  */
 class InformationUnconsumedMessageJsonVO : public JsonVO<InformationUnconsumedMessageDTO::Wrapper> {
 	DTO_INIT(InformationUnconsumedMessageJsonVO, JsonVO<InformationUnconsumedMessageDTO::Wrapper>);
 };
 
 /**
- * 示例分页显示JsonVO，用于响应给客户端的Json对象
+ * 未读消息分页显示JsonVO，用于响应给客户端的Json对象
  */
 class InformationUnconsumedMessagePageJsonVO : public JsonVO<InformationUnconsumedMessagePageDTO::Wrapper> {
 	DTO_INIT(InformationUnconsumedMessagePageJsonVO, JsonVO<InformationUnconsumedMessagePageDTO::Wrapper>);
+};
+
+class LoginConfigJsonVO: public JsonVO<LoginConfigDTO::Wrapper> {
+	DTO_INIT(LoginConfigJsonVO, JsonVO<LoginConfigDTO::Wrapper>);
 };
 
 #include OATPP_CODEGEN_END(DTO)

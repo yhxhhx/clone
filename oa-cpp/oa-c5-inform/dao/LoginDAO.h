@@ -21,10 +21,9 @@
 #include "BaseDAO.h"
 #include"../domain/GlobalInclude.h"
 
-class InformationDAO : public BaseDAO
+class LoginDAO : public BaseDAO
 {
+
 public:
-    list<InformationUnconsumedMessageDO> selectByName(const string&);
-    int modifyMessageStatus(const InformationMessageStatusModifyDO&);
 };
 #endif // !_INFORMATIONDAO_H_

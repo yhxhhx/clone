@@ -30,19 +30,10 @@
 class InformationService
 {
 public:
-	// 分页查询所有数据
+	// 查询所有数据
 	InformationUnconsumedMessagePageDTO::Wrapper listAll(const InformationUnconsumedMessageQuery::Wrapper& query);
-	// 保存数据
-	//uint64_t saveData(const SampleDTO::Wrapper& dto);
 	// 修改数据
-	//bool updateData(const SampleDTO::Wrapper& dto);
-	// 通过ID删除数据
-	//bool removeData(uint64_t id);
-
-	//根据用户信息查询所有未读消息
-	//
-	//根据消息某种性质修改消息状态
-	//
+	int modifyMessageStatus(const InformationMessageStatusModifyDTO::Wrapper& dto);
 };
 
 #endif // !_INFORMATION_SERVICE_

@@ -61,3 +61,12 @@ InformationUnconsumedMessagePageDTO::Wrapper InformationService::listAll(const I
 	}
 	return messages;
 }
+
+int InformationService::modifyMessageStatus(const InformationMessageStatusModifyDTO::Wrapper& dto)
+{
+	InformationMessageStatusModifyDO data;
+	ZO_STAR_DOMAIN_DTO_TO_DO(data, dto, id, id, consumed, target_status,person,name);
+	//cout << dto->id << ' ' << dto->target_status << ' ' << (string)dto->name << endl;
+	InformationDAO dao;
+	return 	dao.modifyMessageStatus(data)==1;
+}

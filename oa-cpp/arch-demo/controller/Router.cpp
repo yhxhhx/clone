@@ -21,7 +21,7 @@
 #include "ApiHelper.h"
 
 #ifdef HTTP_SERVER_DEMO
-#include "user/UserController.h"
+#include "sample/user/UserController.h"
 #include "sample/SampleController.h"
 #include "file/FileController.h"
 #include "ws/WSController.h"

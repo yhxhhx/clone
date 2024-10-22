@@ -69,5 +69,19 @@ public:
 	}
 };
 
+class InformationMessageStatusModifyDO {
+	CC_SYNTHESIZE(string, person_, person);
+	// ±àºÅ
+	CC_SYNTHESIZE(uint64_t, id_, id);
+	// ±àºÅ
+	CC_SYNTHESIZE(bool, consumed_, consumed);
+
+public:
+	InformationMessageStatusModifyDO(){
+		id_ = 0;
+		consumed_ = "";
+		person_ = "";
+	}
+};
 
 #endif // !_INFORMATION_DO_
