@@ -55,3 +55,13 @@ templet:
   field:
    confirm: 确认是否删除表单
    name: 表单模板名称
+
+
+sys:
+ setting:
+   put:
+    summary: 修改系统名称和修改系统副标题
+   field:
+    id: 系统唯一标识
+    systemname: 系统名称
+    systemsubtitle: 系统副标题

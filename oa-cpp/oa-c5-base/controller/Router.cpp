@@ -26,7 +26,7 @@
 #include "file/FileController.h"
 #include "ws/WSController.h"
 #endif
-
+#include "system/setting/SysSettingController.h"
 #include "system/setting/SystemSettingController.h"
 #include "templet/manage/TempletManageController.h"
 #include "templet/add/TempletAddController.h"
@@ -60,6 +60,8 @@ void Router::initRouter()
 	ROUTER_SIMPLE_BIND(TempletManageController);
 	ROUTER_SIMPLE_BIND(TempletAddController);
 	ROUTER_SIMPLE_BIND(TempletRemoveController);
+	ROUTER_SIMPLE_BIND(SysSettingController);
+
 }
 
 #ifdef HTTP_SERVER_DEMO
