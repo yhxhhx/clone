@@ -19,9 +19,9 @@ public:
 	static std::atomic<v_int32> SOCKETS;
 
 public:
-	// 当socket实例创建时调用
+	// 当websocket实例创建时调用
 	void onAfterCreate(const WebSocket& socket, const std::shared_ptr<const ParameterMap>& params) override;
-	// 当socket实例销毁前调用
+	// 当websocket实例销毁前调用
 	void onBeforeDestroy(const WebSocket& socket) override;
 };
 
