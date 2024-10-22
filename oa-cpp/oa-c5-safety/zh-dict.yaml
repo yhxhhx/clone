@@ -49,3 +49,17 @@ password:
    xnumber: 工号
    xchangePasswordTime: 修改密码日期
    xpasswordExpiredTime: 最近登录日期
+
+safety:
+ personpassword:
+  get:
+   summary: 获取用户密码设置
+  put:
+   summary: 修改用户密码设置
+  field:
+   id: 数据记录唯一id
+   number: 工号
+   password: 账户的新密码
+   datetime: 日期时间
+   oldpassword: 旧密码
+   password2: 第二次输入密码
