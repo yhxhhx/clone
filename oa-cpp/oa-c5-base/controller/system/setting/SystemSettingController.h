@@ -25,10 +25,10 @@
 
 #include OATPP_CODEGEN_BEGIN(ApiController)
 
-class SystemSettingController : public oatpp::web::server::api::ApiController
+class SystemsettingController : public oatpp::web::server::api::ApiController
 {
 	// 定义控制器访问入口
-	API_ACCESS_DECLARE(SystemSettingController);
+	API_ACCESS_DECLARE(SystemsettingController);
 public: 
 	// 修改系统名称和系统副标题
 	API_DEF_ENDPOINT_INFO_AUTH(ZH_WORDS_GETTER("system.setting.put.summary"), modifySystemName, StringJsonVO::Wrapper);
