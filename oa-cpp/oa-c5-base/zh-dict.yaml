@@ -1,4 +1,4 @@
-system:
+sys:
  setting:
    put:
     summary: 修改系统名称和修改系统副标题

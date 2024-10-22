@@ -30,11 +30,11 @@ class SystemInfoDTO : public oatpp::DTO
 {
 	DTO_INIT(SystemInfoDTO, DTO);
 	//id
-	API_DTO_FIELD_DEFAULT(String, id, ZH_WORDS_GETTER("system.setting.field.id"));
+	API_DTO_FIELD_DEFAULT(String, id, ZH_WORDS_GETTER("sys.setting.field.id"));
 	//系统名称
-	API_DTO_FIELD_DEFAULT(String,name, ZH_WORDS_GETTER("system.setting.field.systemname"));
+	API_DTO_FIELD_DEFAULT(String,name, ZH_WORDS_GETTER("sys.setting.field.systemname"));
 	//系统副标题
-	API_DTO_FIELD_DEFAULT(String,subtitle, ZH_WORDS_GETTER("system.setting.field.systemsubtitle"));
+	API_DTO_FIELD_DEFAULT(String,subtitle, ZH_WORDS_GETTER("sys.setting.field.systemsubtitle"));
 	
 	
 };
