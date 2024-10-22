@@ -8,6 +8,16 @@
 class SendDTO : public oatpp::DTO
 {
 	DTO_INIT(SendDTO, DTO);
+
+	DTO_FIELD(String, phone);
+	DTO_FIELD_INFO(phone) {
+		info->description = ZH_WORDS_GETTER("send.field.phone");
+	}
+
+	DTO_FIELD(String, mail);
+	DTO_FIELD_INFO(mail) {
+		info->description = ZH_WORDS_GETTER("send.field.mail");
+	}
 	// 消息类型
 	DTO_FIELD(String, type);
 	DTO_FIELD_INFO(type) {

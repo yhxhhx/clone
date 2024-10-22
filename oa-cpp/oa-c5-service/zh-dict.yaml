@@ -4,6 +4,8 @@
  field:
   type: 发送类型
   code: 验证码
+  phone: 电话
+  mail: 邮箱
  typename:
   massage: 短信
   mail: 邮件   
