@@ -1,6 +1,9 @@
-send:
+ï»¿send:
  post:
-  summary: ·¢ËÍĞÅÏ¢    
+  summary: å‘é€ä¿¡æ¯    
  field:
-  type: ÏûÏ¢ÀàĞÍ
-  code: ÑéÖ¤Âë
+  type: å‘é€ç±»å‹
+  code: éªŒè¯ç 
+ typename:
+  massage: çŸ­ä¿¡
+  mail: é‚®ä»¶   
