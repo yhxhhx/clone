@@ -29,3 +29,23 @@ login:
    nature: 认证用户绑定属性
    user: 绑定管理用户
    password: 管理用户密码
+
+test:
+ get:
+  summary: 测试查询
+
+password:
+ admin:
+  get:
+   summary: 获取管理员密码设置
+  put:
+   summary: 保存管理员密码设置
+  field:
+   xid: 数据唯一标识
+   xoldpassword: 旧密码
+   xnewpassword: 新密码
+   xconfirmpassword: 确认密码
+   xname: 姓名
+   xnumber: 工号
+   xchangePasswordTime: 修改密码日期
+   xpasswordExpiredTime: 最近登录日期
