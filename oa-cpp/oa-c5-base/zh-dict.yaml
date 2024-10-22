@@ -1,0 +1,8 @@
+system:
+ setting:
+   put:
+    summary: 修改系统名称和修改系统副标题
+   field:
+    id: 系统唯一标识
+    systemname: 系统名称
+    systemsubtitle: 系统副标题
