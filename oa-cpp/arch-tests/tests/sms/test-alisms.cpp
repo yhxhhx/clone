@@ -27,7 +27,7 @@
 TEST(AliSmsTest, SendOne) {
 	AliSmsSender sender;
 	// 注意：因为参数中有中文字符，所以所有中文字从中文词典中获取，不然会发送短信失败
-	std::shared_ptr<AliSmsResult> res = sender.sendSms("电话号码", "阿里云短信测试", "SMS_154950909", "{\"code\":\"996007\"}");
+	std::shared_ptr<AliSmsResult> res = sender.sendSms("电话号码", "阿里云短信测试", "SMS_154950909", "{\"code\":\"5433\"}");
 	ASSERT_EQ(res->Code(), "OK");
 	std::cout
 		<< "code:  " << res->Code() << std::endl
@@ -35,6 +35,7 @@ TEST(AliSmsTest, SendOne) {
 		<< "bizid: " << res->BizId() << std::endl
 		<< "reqid: " << res->RequestId() << std::endl;
 }
+
 
 // 测试多条发送
 TEST(AliSmsTest, SendBatch)
@@ -49,5 +50,4 @@ TEST(AliSmsTest, SendBatch)
 		<< "bizid: " << res->BizId() << std::endl
 		<< "reqid: " << res->RequestId() << std::endl;
 }
-
 #endif // USE_ALISMS
