@@ -1,0 +1,11 @@
+Login:
+ Basic_configuration:
+  login_config: 登录配置    
+  enable_image_verification_codes: 开启图片验证码
+  enable_SMS_verification_codes: 开始短信验证码
+  enable_Two_factor_authentication: 启用双因素认证
+  enable_scan_QR_code: 启用扫描二维码
+  enable_auto_enrollment: 启用自助注册
+  enable_portal_page: 使用门户页面登录
+  enable_portal_page_as_the_home_of_the_system: 门户页面作为系统首页
+ 

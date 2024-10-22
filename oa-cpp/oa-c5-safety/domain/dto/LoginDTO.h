@@ -9,7 +9,7 @@
  you may not use this file except in compliance with the License.
  You may obtain a copy of the License at
 
-	  https://www.apache.org/licenses/LICENSE-2.0
+      https://www.apache.org/licenses/LICENSE-2.0
 
  Unless required by applicable law or agreed to in writing, software
  distributed under the License is distributed on an "AS IS" BASIS,
@@ -17,29 +17,27 @@
  See the License for the specific language governing permissions and
  limitations under the License.
 */
-#ifndef _INFORMATION_VO_
-#define _INFORMATION_VO_
+#ifndef _LOGIN_DTO_H_
+#define _LOGIN_DTO_H_
 
 #include "../GlobalInclude.h"
-#include "../dto/InformationDTO.h"
 
 #include OATPP_CODEGEN_BEGIN(DTO)
 
-/**
- * 未读消息显示JsonVO，用于响应给客户端的Json对象
- */
-class InformationUnconsumedMessageJsonVO : public JsonVO<InformationUnconsumedMessageDTO::Wrapper> {
-	DTO_INIT(InformationUnconsumedMessageJsonVO, JsonVO<InformationUnconsumedMessageDTO::Wrapper>);
-};
 
-/**
- * 未读消息分页显示JsonVO，用于响应给客户端的Json对象
- */
-class InformationUnconsumedMessagePageJsonVO : public JsonVO<InformationUnconsumedMessagePageDTO::Wrapper> {
-	DTO_INIT(InformationUnconsumedMessagePageJsonVO, JsonVO<InformationUnconsumedMessagePageDTO::Wrapper>);
-};
+class LoginConfigDTO : public oatpp::DTO {
+	DTO_INIT(LoginConfigDTO, DTO);
 
+	DTO_FIELD(Boolean, enable_image_verification_codes);
+	DTO_FIELD(Boolean, enable_SMS_verification_codes);
+	DTO_FIELD(Boolean, enable_Two_factor_authentication);
+	DTO_FIELD(Boolean, enable_scan_QR_code);
+	DTO_FIELD(String, enable_auto_enrollment);
+	DTO_FIELD(Boolean, enable_portal_page);
+	DTO_FIELD(Boolean, enable_portal_page_as_the_home_of_the_system);
+
+};
 
 #include OATPP_CODEGEN_END(DTO)
 
-#endif // !_INFORMATION_VO_
+#endif // !_LOGIN_DTO_H_

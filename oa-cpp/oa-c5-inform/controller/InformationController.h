@@ -70,23 +70,11 @@ public: // 定义接口
 		API_HANDLER_RESP_VO(execMessageStatusModify(dto));
 	}
 
-    //参数描述
-	ENDPOINT_INFO(login_config) {
-		API_DEF_ADD_TITLE(ZH_WORDS_GETTER("Login.Basic_configuration.login_config"));
-		API_DEF_ADD_RSP_JSON_WRAPPER(LoginConfigJsonVO);
-	}
-	ENDPOINT(API_M_GET, "/safety/login_config",login_config)
-	{
-		//
-		//API_HANDLER_RESP_VO(execMessageStatusModify(dto));
-		return createResponse(Status::CODE_200, "ok");
-	}
 
 private: // 定义接口执行函数
     //
 	InformationUnconsumedMessagePageJsonVO::Wrapper execQueryUnconsumedMessage(const InformationUnconsumedMessageQuery::Wrapper& query);
 	Uint64JsonVO::Wrapper execMessageStatusModify(const InformationMessageStatusModifyDTO::Wrapper& dto);
-	LoginConfigJsonVO::Wrapper execLoginConfig();
 };
 
 #include OATPP_CODEGEN_END(ApiController)

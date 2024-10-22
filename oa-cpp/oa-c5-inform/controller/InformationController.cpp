@@ -29,10 +29,3 @@ Uint64JsonVO::Wrapper InformationController::execMessageStatusModify(const Infor
 	//œÏ”¶
 	return  jvo;
 }
-
-LoginConfigJsonVO::Wrapper InformationController::execLoginConfig()
-{
-	auto jvo = LoginConfigJsonVO::createShared();
-
-	return jvo;
-}

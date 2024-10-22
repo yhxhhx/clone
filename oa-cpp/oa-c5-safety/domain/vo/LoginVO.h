@@ -3,7 +3,7 @@
  Copyright Zero One Star. All rights reserved.
 
  @Author: Detachment
- @Date: 2024/10/19 17:07:08
+ @Date: 2024/10/19 21:44:34
 
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
@@ -17,23 +17,18 @@
  See the License for the specific language governing permissions and
  limitations under the License.
 */
-#ifndef _INFORMATION_SERVICE_
-#define _INFORMATION_SERVICE_
-#include <list>
-#include "domain/vo/InformationVO.h"
-#include "domain/query/InformationQuery.h"
-#include "domain/dto/InformationDTO.h"
+#ifndef _LOGIN_VO_
+#define _LOGIN_VO_
 
-/**
- * 示例服务实现，演示基础的示例服务实现
- */
-class LoginService
-{
-public:
-	// 查询所有数据
-	LoginConfigDTO::Wrapper All();
-	// 修改数据
+#include"../GlobalInclude.h"
+#include"../dto/LoginDTO.h"
+
+#include OATPP_CODEGEN_BEGIN(DTO)
+
+class LoginConfigJsonVO : public JsonVO<LoginConfigDTO::Wrapper> {
+	DTO_INIT(LoginConfigJsonVO, JsonVO<LoginConfigDTO::Wrapper>);
 };
 
-#endif // !_INFORMATION_SERVICE_
+#include OATPP_CODEGEN_END(DTO)
 
+#endif // !_LOGIN_VO_
