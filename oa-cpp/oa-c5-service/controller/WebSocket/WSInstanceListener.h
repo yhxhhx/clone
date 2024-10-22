@@ -13,9 +13,7 @@ class WSInstanceListener : public oatpp::websocket::ConnectionHandler::SocketIns
 private:
 	static constexpr const char* TAG = "Server_WSInstanceListener";
 public:
-	/**
-	 * 连接客户端的计数器
-	 */
+	//连接客户端的计数器
 	static std::atomic<v_int32> SOCKETS;
 
 public:
