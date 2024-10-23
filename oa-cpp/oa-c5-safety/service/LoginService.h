@@ -17,8 +17,8 @@
  See the License for the specific language governing permissions and
  limitations under the License.
 */
-#ifndef _INFORMATION_SERVICE_
-#define _INFORMATION_SERVICE_
+#ifndef _LOGIN_SERVICE_
+#define _LOGIN_SERVICE_
 #include <list>
 #include "domain/dto/LoginDTO.h"
 
@@ -33,5 +33,5 @@ public:
 	// ÐÞ¸ÄÊý¾Ý
 };
 
-#endif // !_INFORMATION_SERVICE_
+#endif // !_LOGIN_SERVICE_
 

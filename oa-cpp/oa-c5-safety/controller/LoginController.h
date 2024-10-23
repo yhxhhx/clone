@@ -19,9 +19,12 @@
 #ifndef _LOGIN_CONTROLLER_
 #define _LOGIN_CONTROLLER_
 
-#include"../domain/vo/LoginVO.h"
 #include "domain/vo/BaseJsonVO.h"
 #include"../domain/GlobalInclude.h"
+
+#include"../domain/vo/LoginVO.h"
+#include"../domain/dto/LoginDTO.h"
+#include"../service/LoginService.h"
 
 #include OATPP_CODEGEN_BEGIN(ApiController)
 
@@ -33,18 +36,16 @@ public: // 定义接口
 	//参数描述
 	ENDPOINT_INFO(login_config) {
 		API_DEF_ADD_TITLE(ZH_WORDS_GETTER("Login.Basic_configuration.login_config"));
-		//API_DEF_ADD_RSP_JSON_WRAPPER(LoginConfigJsonVO);
+		API_DEF_ADD_RSP_JSON_WRAPPER(LoginConfigJsonVO);
 	}
 	ENDPOINT(API_M_GET, "/safety/login_config", login_config)
 	{
-		//
-		//API_HANDLER_RESP_VO(execMessageStatusModify(dto));
-		return createResponse(Status::CODE_200, "ok");
+		API_HANDLER_RESP_VO(execLoginConfig());
 	}
 
 private: // 定义接口执行函数
 	//
-	//LoginConfigJsonVO::Wrapper execLoginConfig();
+	LoginConfigJsonVO::Wrapper execLoginConfig();
 };
 
 #include OATPP_CODEGEN_END(ApiController)

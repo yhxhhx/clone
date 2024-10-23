@@ -24,8 +24,5 @@
 #include "../Macros.h"
 #include "ServerInfo.h"
 #include"./domain/do/DoInclude.h"
-#include"./domain/dto/LoginDTO.h"
-#include"./domain/vo/LoginVO.h"
-#include"./domain/query/LoginQuery.h"
 
 #endif // !_GLOBAL_INCLUDE_
