@@ -1,0 +1,3 @@
+D:\CMake\bin\cmake.exe -E rm -f CMakeFiles\oa-c5-base.dir/objects.a
+C:\PROGRA~1\mingw64\bin\ar.exe qc CMakeFiles\oa-c5-base.dir/objects.a @CMakeFiles\oa-c5-base.dir\objects1.rsp
+C:\PROGRA~1\mingw64\bin\G__~1.EXE -g -Wl,--whole-archive CMakeFiles\oa-c5-base.dir/objects.a -Wl,--no-whole-archive -o oa-c5-base.exe -Wl,--out-implib,liboa-c5-base.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\oa-c5-base.dir\linkLibs.rsp

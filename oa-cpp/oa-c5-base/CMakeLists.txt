@@ -4,10 +4,10 @@
 cmake_minimum_required (VERSION 3.8)
 
 # 标记是否是示例架构模块，业务模块需要将此致修改为false
-set(IS_ARCH_DEMO true)
+set(IS_ARCH_DEMO false)
 
 # 设置文件名称
-set (appName arch-demo)
+set (appName oa-c5-base)
 
 # 包含库目录
 include_directories ("./")
@@ -42,7 +42,7 @@ if(WIN32)
 endif()
 
 # 编译可执行文件
-add_executable (${appName} ${SC_FILES})
+add_executable (${appName} ${SC_FILES} "domain/vo/FormTemplateVO.h" "domain/query/FormTemplateQuery.h" "controller/FormTemplate/FormTemplateController.h" "controller/FormTemplate/FormTemplateController.cpp" "domain/dto/FormTemplateDetailsDTO.h" "domain/vo/FormTemplateDetailsVO.h" "controller/FormTemplateDetails/FormTemplateDetailsController.cpp" "controller/FormTemplateDetails/FormTemplateDetailsController.h")
 
 # 给架构示例项目添加特有的宏
 if(${IS_ARCH_DEMO})
