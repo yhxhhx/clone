@@ -21,11 +21,11 @@
 #define _MACROS_
 
 #ifndef TEST_NS_ADDR
-#define TEST_NS_ADDR "192.168.220.128:8848"
+#define TEST_NS_ADDR "192.168.230.233:8848"
 #endif
 
 #ifndef TEST_NS_NAMESPACE
-#define TEST_NS_NAMESPACE "4833404f-4b82-462e-889a-3c508160c6b4"
+#define TEST_NS_NAMESPACE "oa-dev"
 #endif
 
 //////////////////////////////////////////////////////////////////////////

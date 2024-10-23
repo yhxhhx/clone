@@ -61,7 +61,7 @@ protected:
 // ²âÊÔ·¢ËÍÎÄ±¾ÄÚÈİ
 TEST_F(MailTest, SendText) {
 	std::string body = ZH_WORDS_GETTER("mail.body2");
-	emailSender->addRecvEmailAddr("2069682479@qq.com", "awei");
+	emailSender->addRecvEmailAddr("2807324109@qq.com");
 	emailSender->setEmailContent(topic, body);
 	ASSERT_EQ(emailSender->send(), true);
 }
@@ -69,7 +69,7 @@ TEST_F(MailTest, SendText) {
 // ²âÊÔ·¢ËÍHtmlÄÚÈİ
 TEST_F(MailTest, SendHtml) {
 	std::string body = ZH_WORDS_GETTER("mail.body1");
-	emailSender->addRecvEmailAddr("2069682479@qq.com", "awei");
+	emailSender->addRecvEmailAddr("2807324109@qq.com");
 	emailSender->setEmailContent(topic, body);
 	ASSERT_EQ(emailSender->send(), true);
 }
@@ -77,8 +77,8 @@ TEST_F(MailTest, SendHtml) {
 // ²âÊÔ·¢ËÍ¸½¼ş
 TEST_F(MailTest, SendAttach) {
 	std::string body = ZH_WORDS_GETTER("mail.body1");
-	emailSender->addRecvEmailAddr("2069682479@qq.com", "awei");
+	emailSender->addRecvEmailAddr("2807324109@qq.com");
 	emailSender->setEmailContent(topic, body);
-	emailSender->addAttachment("/home/file/1.zip");
+	emailSender->addAttachment("/home/file/1.txt");
 	ASSERT_EQ(emailSender->send(), true);
 }
