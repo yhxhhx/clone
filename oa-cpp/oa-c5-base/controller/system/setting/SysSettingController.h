@@ -17,8 +17,8 @@
  See the License for the specific language governing permissions and
  limitations under the License.
 */
-#ifndef _SYSTEMSETTINGCONTROLLER_H_
-#define _SYSTEMSETTINGCONTROLLER_H_
+#ifndef _SYSSETTINGCONTROLLER_H_
+#define _SYSSETTINGCONTROLLER_H_
 
 #include "domain/vo/BaseJsonVO.h"
 #include "domain/dto/system/setting/SystemInfoDTO.h"
@@ -31,7 +31,7 @@ class SysSettingController : public oatpp::web::server::api::ApiController
 	API_ACCESS_DECLARE(SysSettingController);
 public: 
 	// 修改系统名称和系统副标题
-	API_DEF_ENDPOINT_INFO_AUTH(ZH_WORDS_GETTER("system.setting.put.summary"), modifySystemName, StringJsonVO::Wrapper);
+	API_DEF_ENDPOINT_INFO_AUTH(ZH_WORDS_GETTER("sys.setting.put.summary"), modifySystemName, StringJsonVO::Wrapper);
 	API_HANDLER_ENDPOINT_AUTH(API_M_PUT, "/system-setting/system-info ", modifySystemName, BODY_DTO(SystemInfoDTO::Wrapper, dto), executeModifySystemInfo(dto));
 
 	
@@ -44,4 +44,4 @@ private: // 定义接口执行函数
 
 #include OATPP_CODEGEN_END(ApiController)
 
-#endif // !_SYSTEMSETTINGCONTROLLER_H_
+#endif // !_SYSSETTINGCONTROLLER_H_
