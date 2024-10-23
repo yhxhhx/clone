@@ -42,7 +42,7 @@ if(WIN32)
 endif()
 
 # 编译可执行文件
-add_executable (${appName} ${SC_FILES})
+add_executable (${appName} ${SC_FILES} "domain/vo/FormTemplateVO.h" "domain/query/FormTemplateQuery.h" "controller/FormTemplate/FormTemplateController.h" "controller/FormTemplate/FormTemplateController.cpp" "domain/dto/FormTemplateDetailsDTO.h" "domain/vo/FormTemplateDetailsVO.h" "controller/FormTemplateDetails/FormTemplateDetailsController.cpp" "controller/FormTemplateDetails/FormTemplateDetailsController.h")
 
 # 给架构示例项目添加特有的宏
 if(${IS_ARCH_DEMO})

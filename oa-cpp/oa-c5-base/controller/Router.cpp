@@ -31,6 +31,8 @@
 #include "templet/manage/TempletManageController.h"
 #include "templet/add/TempletAddController.h"
 #include "templet/remove/TempletRemoveController.h"
+#include "FormTemplate/FormTemplateController.h"
+#include "FormTemplateDetails/FormTemplateDetailsController.h"
 
 // 如果定义了关闭Swagger文档宏
 #ifdef CLOSE_SWAGGER_DOC
@@ -61,7 +63,8 @@ void Router::initRouter()
 	ROUTER_SIMPLE_BIND(TempletAddController);
 	ROUTER_SIMPLE_BIND(TempletRemoveController);
 	ROUTER_SIMPLE_BIND(SysSettingController);
-
+	ROUTER_SIMPLE_BIND(FormTemplateController);
+	//ROUTER_SIMPLE_BIND(FormTemplateDetailsController);
 }
 
 #ifdef HTTP_SERVER_DEMO

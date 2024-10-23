@@ -65,3 +65,21 @@ sys:
     id: 系统唯一标识
     systemname: 系统名称
     systemsubtitle: 系统副标题
+
+
+
+formTemplate:
+  field:
+    xid: 表单模板ID
+    xcreateTime: 创建时间
+    xsequence: 序列号
+    xupdateTime: 更新时间
+    xdistributeFactor: 分配因子
+    xalias: 别名
+    xcategory: 分类
+    xdata: 数据
+    xdescription: 描述
+    xicon: 图标
+    xmobileData: 移动数据
+    xname: 名称
+    xoutline: 概要

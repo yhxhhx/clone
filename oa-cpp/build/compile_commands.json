@@ -1,0 +1,242 @@
+[
+{
+  "directory": "D:/code/zero-one-09oa/oa-cpp/build/lib-oatpp",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE -DOATPP_SWAGGER_RES_PATH=\\\"res\\\" -DOATPP_SWAGGER_SERVICE_NAME=\"\\\"zero-one-oa for windows\\\"\" -DUSE_DFS -DUSE_MONGO -DUSE_PDF -DUSE_REDIS -DUSE_ROCKETMQ -DUSE_XLNT -DUSE_YML @CMakeFiles/lib-oatpp.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\lib-oatpp.dir\\src\\CustomerAuthorizeHandler.cpp.obj -c D:\\code\\zero-one-09oa\\oa-cpp\\lib-oatpp\\src\\CustomerAuthorizeHandler.cpp",
+  "file": "D:/code/zero-one-09oa/oa-cpp/lib-oatpp/src/CustomerAuthorizeHandler.cpp",
+  "output": "lib-oatpp/CMakeFiles/lib-oatpp.dir/src/CustomerAuthorizeHandler.cpp.obj"
+},
+{
+  "directory": "D:/code/zero-one-09oa/oa-cpp/build/lib-oatpp",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE -DOATPP_SWAGGER_RES_PATH=\\\"res\\\" -DOATPP_SWAGGER_SERVICE_NAME=\"\\\"zero-one-oa for windows\\\"\" -DUSE_DFS -DUSE_MONGO -DUSE_PDF -DUSE_REDIS -DUSE_ROCKETMQ -DUSE_XLNT -DUSE_YML @CMakeFiles/lib-oatpp.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\lib-oatpp.dir\\src\\ErrorHandler.cpp.obj -c D:\\code\\zero-one-09oa\\oa-cpp\\lib-oatpp\\src\\ErrorHandler.cpp",
+  "file": "D:/code/zero-one-09oa/oa-cpp/lib-oatpp/src/ErrorHandler.cpp",
+  "output": "lib-oatpp/CMakeFiles/lib-oatpp.dir/src/ErrorHandler.cpp.obj"
+},
+{
+  "directory": "D:/code/zero-one-09oa/oa-cpp/build/lib-oatpp",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE -DOATPP_SWAGGER_RES_PATH=\\\"res\\\" -DOATPP_SWAGGER_SERVICE_NAME=\"\\\"zero-one-oa for windows\\\"\" -DUSE_DFS -DUSE_MONGO -DUSE_PDF -DUSE_REDIS -DUSE_ROCKETMQ -DUSE_XLNT -DUSE_YML @CMakeFiles/lib-oatpp.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\lib-oatpp.dir\\src\\HttpServer.cpp.obj -c D:\\code\\zero-one-09oa\\oa-cpp\\lib-oatpp\\src\\HttpServer.cpp",
+  "file": "D:/code/zero-one-09oa/oa-cpp/lib-oatpp/src/HttpServer.cpp",
+  "output": "lib-oatpp/CMakeFiles/lib-oatpp.dir/src/HttpServer.cpp.obj"
+},
+{
+  "directory": "D:/code/zero-one-09oa/oa-cpp/build/lib-oatpp",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE -DOATPP_SWAGGER_RES_PATH=\\\"res\\\" -DOATPP_SWAGGER_SERVICE_NAME=\"\\\"zero-one-oa for windows\\\"\" -DUSE_DFS -DUSE_MONGO -DUSE_PDF -DUSE_REDIS -DUSE_ROCKETMQ -DUSE_XLNT -DUSE_YML @CMakeFiles/lib-oatpp.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\lib-oatpp.dir\\src\\IpUtil.cpp.obj -c D:\\code\\zero-one-09oa\\oa-cpp\\lib-oatpp\\src\\IpUtil.cpp",
+  "file": "D:/code/zero-one-09oa/oa-cpp/lib-oatpp/src/IpUtil.cpp",
+  "output": "lib-oatpp/CMakeFiles/lib-oatpp.dir/src/IpUtil.cpp.obj"
+},
+{
+  "directory": "D:/code/zero-one-09oa/oa-cpp/build/lib-oatpp",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE -DOATPP_SWAGGER_RES_PATH=\\\"res\\\" -DOATPP_SWAGGER_SERVICE_NAME=\"\\\"zero-one-oa for windows\\\"\" -DUSE_DFS -DUSE_MONGO -DUSE_PDF -DUSE_REDIS -DUSE_ROCKETMQ -DUSE_XLNT -DUSE_YML @CMakeFiles/lib-oatpp.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\lib-oatpp.dir\\src\\JWTUtil.cpp.obj -c D:\\code\\zero-one-09oa\\oa-cpp\\lib-oatpp\\src\\JWTUtil.cpp",
+  "file": "D:/code/zero-one-09oa/oa-cpp/lib-oatpp/src/JWTUtil.cpp",
+  "output": "lib-oatpp/CMakeFiles/lib-oatpp.dir/src/JWTUtil.cpp.obj"
+},
+{
+  "directory": "D:/code/zero-one-09oa/oa-cpp/build/lib-oatpp",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE -DOATPP_SWAGGER_RES_PATH=\\\"res\\\" -DOATPP_SWAGGER_SERVICE_NAME=\"\\\"zero-one-oa for windows\\\"\" -DUSE_DFS -DUSE_MONGO -DUSE_PDF -DUSE_REDIS -DUSE_ROCKETMQ -DUSE_XLNT -DUSE_YML @CMakeFiles/lib-oatpp.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\lib-oatpp.dir\\src\\ResultStatus.cpp.obj -c D:\\code\\zero-one-09oa\\oa-cpp\\lib-oatpp\\src\\ResultStatus.cpp",
+  "file": "D:/code/zero-one-09oa/oa-cpp/lib-oatpp/src/ResultStatus.cpp",
+  "output": "lib-oatpp/CMakeFiles/lib-oatpp.dir/src/ResultStatus.cpp.obj"
+},
+{
+  "directory": "D:/code/zero-one-09oa/oa-cpp/build/lib-oatpp",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE -DOATPP_SWAGGER_RES_PATH=\\\"res\\\" -DOATPP_SWAGGER_SERVICE_NAME=\"\\\"zero-one-oa for windows\\\"\" -DUSE_DFS -DUSE_MONGO -DUSE_PDF -DUSE_REDIS -DUSE_ROCKETMQ -DUSE_XLNT -DUSE_YML @CMakeFiles/lib-oatpp.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\lib-oatpp.dir\\src\\URIUtil.cpp.obj -c D:\\code\\zero-one-09oa\\oa-cpp\\lib-oatpp\\src\\URIUtil.cpp",
+  "file": "D:/code/zero-one-09oa/oa-cpp/lib-oatpp/src/URIUtil.cpp",
+  "output": "lib-oatpp/CMakeFiles/lib-oatpp.dir/src/URIUtil.cpp.obj"
+},
+{
+  "directory": "D:/code/zero-one-09oa/oa-cpp/build/lib-mysql",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE -DOATPP_SWAGGER_RES_PATH=\\\"res\\\" -DOATPP_SWAGGER_SERVICE_NAME=\"\\\"zero-one-oa for windows\\\"\" -DUSE_DFS -DUSE_MONGO -DUSE_PDF -DUSE_REDIS -DUSE_ROCKETMQ -DUSE_XLNT -DUSE_YML @CMakeFiles/lib-mysql.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\lib-mysql.dir\\src\\BaseDAO.cpp.obj -c D:\\code\\zero-one-09oa\\oa-cpp\\lib-mysql\\src\\BaseDAO.cpp",
+  "file": "D:/code/zero-one-09oa/oa-cpp/lib-mysql/src/BaseDAO.cpp",
+  "output": "lib-mysql/CMakeFiles/lib-mysql.dir/src/BaseDAO.cpp.obj"
+},
+{
+  "directory": "D:/code/zero-one-09oa/oa-cpp/build/lib-mysql",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE -DOATPP_SWAGGER_RES_PATH=\\\"res\\\" -DOATPP_SWAGGER_SERVICE_NAME=\"\\\"zero-one-oa for windows\\\"\" -DUSE_DFS -DUSE_MONGO -DUSE_PDF -DUSE_REDIS -DUSE_ROCKETMQ -DUSE_XLNT -DUSE_YML @CMakeFiles/lib-mysql.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\lib-mysql.dir\\src\\ConnectionPool.cpp.obj -c D:\\code\\zero-one-09oa\\oa-cpp\\lib-mysql\\src\\ConnectionPool.cpp",
+  "file": "D:/code/zero-one-09oa/oa-cpp/lib-mysql/src/ConnectionPool.cpp",
+  "output": "lib-mysql/CMakeFiles/lib-mysql.dir/src/ConnectionPool.cpp.obj"
+},
+{
+  "directory": "D:/code/zero-one-09oa/oa-cpp/build/lib-mysql",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE -DOATPP_SWAGGER_RES_PATH=\\\"res\\\" -DOATPP_SWAGGER_SERVICE_NAME=\"\\\"zero-one-oa for windows\\\"\" -DUSE_DFS -DUSE_MONGO -DUSE_PDF -DUSE_REDIS -DUSE_ROCKETMQ -DUSE_XLNT -DUSE_YML @CMakeFiles/lib-mysql.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\lib-mysql.dir\\src\\DbInit.cpp.obj -c D:\\code\\zero-one-09oa\\oa-cpp\\lib-mysql\\src\\DbInit.cpp",
+  "file": "D:/code/zero-one-09oa/oa-cpp/lib-mysql/src/DbInit.cpp",
+  "output": "lib-mysql/CMakeFiles/lib-mysql.dir/src/DbInit.cpp.obj"
+},
+{
+  "directory": "D:/code/zero-one-09oa/oa-cpp/build/lib-mysql",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE -DOATPP_SWAGGER_RES_PATH=\\\"res\\\" -DOATPP_SWAGGER_SERVICE_NAME=\"\\\"zero-one-oa for windows\\\"\" -DUSE_DFS -DUSE_MONGO -DUSE_PDF -DUSE_REDIS -DUSE_ROCKETMQ -DUSE_XLNT -DUSE_YML @CMakeFiles/lib-mysql.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\lib-mysql.dir\\src\\SqlSession.cpp.obj -c D:\\code\\zero-one-09oa\\oa-cpp\\lib-mysql\\src\\SqlSession.cpp",
+  "file": "D:/code/zero-one-09oa/oa-cpp/lib-mysql/src/SqlSession.cpp",
+  "output": "lib-mysql/CMakeFiles/lib-mysql.dir/src/SqlSession.cpp.obj"
+},
+{
+  "directory": "D:/code/zero-one-09oa/oa-cpp/build/lib-common",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE -DOATPP_SWAGGER_RES_PATH=\\\"res\\\" -DOATPP_SWAGGER_SERVICE_NAME=\"\\\"zero-one-oa for windows\\\"\" -DUSE_DFS -DUSE_MONGO -DUSE_PDF -DUSE_REDIS -DUSE_ROCKETMQ -DUSE_XLNT -DUSE_YML @CMakeFiles/lib-common.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\lib-common.dir\\src\\CharsetConvertHepler.cpp.obj -c D:\\code\\zero-one-09oa\\oa-cpp\\lib-common\\src\\CharsetConvertHepler.cpp",
+  "file": "D:/code/zero-one-09oa/oa-cpp/lib-common/src/CharsetConvertHepler.cpp",
+  "output": "lib-common/CMakeFiles/lib-common.dir/src/CharsetConvertHepler.cpp.obj"
+},
+{
+  "directory": "D:/code/zero-one-09oa/oa-cpp/build/lib-common",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE -DOATPP_SWAGGER_RES_PATH=\\\"res\\\" -DOATPP_SWAGGER_SERVICE_NAME=\"\\\"zero-one-oa for windows\\\"\" -DUSE_DFS -DUSE_MONGO -DUSE_PDF -DUSE_REDIS -DUSE_ROCKETMQ -DUSE_XLNT -DUSE_YML @CMakeFiles/lib-common.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\lib-common.dir\\src\\EmailSender.cpp.obj -c D:\\code\\zero-one-09oa\\oa-cpp\\lib-common\\src\\EmailSender.cpp",
+  "file": "D:/code/zero-one-09oa/oa-cpp/lib-common/src/EmailSender.cpp",
+  "output": "lib-common/CMakeFiles/lib-common.dir/src/EmailSender.cpp.obj"
+},
+{
+  "directory": "D:/code/zero-one-09oa/oa-cpp/build/lib-common",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE -DOATPP_SWAGGER_RES_PATH=\\\"res\\\" -DOATPP_SWAGGER_SERVICE_NAME=\"\\\"zero-one-oa for windows\\\"\" -DUSE_DFS -DUSE_MONGO -DUSE_PDF -DUSE_REDIS -DUSE_ROCKETMQ -DUSE_XLNT -DUSE_YML @CMakeFiles/lib-common.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\lib-common.dir\\src\\ExcelComponent.cpp.obj -c D:\\code\\zero-one-09oa\\oa-cpp\\lib-common\\src\\ExcelComponent.cpp",
+  "file": "D:/code/zero-one-09oa/oa-cpp/lib-common/src/ExcelComponent.cpp",
+  "output": "lib-common/CMakeFiles/lib-common.dir/src/ExcelComponent.cpp.obj"
+},
+{
+  "directory": "D:/code/zero-one-09oa/oa-cpp/build/lib-common",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE -DOATPP_SWAGGER_RES_PATH=\\\"res\\\" -DOATPP_SWAGGER_SERVICE_NAME=\"\\\"zero-one-oa for windows\\\"\" -DUSE_DFS -DUSE_MONGO -DUSE_PDF -DUSE_REDIS -DUSE_ROCKETMQ -DUSE_XLNT -DUSE_YML @CMakeFiles/lib-common.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\lib-common.dir\\src\\FastDfsClient.cpp.obj -c D:\\code\\zero-one-09oa\\oa-cpp\\lib-common\\src\\FastDfsClient.cpp",
+  "file": "D:/code/zero-one-09oa/oa-cpp/lib-common/src/FastDfsClient.cpp",
+  "output": "lib-common/CMakeFiles/lib-common.dir/src/FastDfsClient.cpp.obj"
+},
+{
+  "directory": "D:/code/zero-one-09oa/oa-cpp/build/lib-common",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE -DOATPP_SWAGGER_RES_PATH=\\\"res\\\" -DOATPP_SWAGGER_SERVICE_NAME=\"\\\"zero-one-oa for windows\\\"\" -DUSE_DFS -DUSE_MONGO -DUSE_PDF -DUSE_REDIS -DUSE_ROCKETMQ -DUSE_XLNT -DUSE_YML @CMakeFiles/lib-common.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\lib-common.dir\\src\\MongoClient.cpp.obj -c D:\\code\\zero-one-09oa\\oa-cpp\\lib-common\\src\\MongoClient.cpp",
+  "file": "D:/code/zero-one-09oa/oa-cpp/lib-common/src/MongoClient.cpp",
+  "output": "lib-common/CMakeFiles/lib-common.dir/src/MongoClient.cpp.obj"
+},
+{
+  "directory": "D:/code/zero-one-09oa/oa-cpp/build/lib-common",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE -DOATPP_SWAGGER_RES_PATH=\\\"res\\\" -DOATPP_SWAGGER_SERVICE_NAME=\"\\\"zero-one-oa for windows\\\"\" -DUSE_DFS -DUSE_MONGO -DUSE_PDF -DUSE_REDIS -DUSE_ROCKETMQ -DUSE_XLNT -DUSE_YML @CMakeFiles/lib-common.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\lib-common.dir\\src\\NacosClient.cpp.obj -c D:\\code\\zero-one-09oa\\oa-cpp\\lib-common\\src\\NacosClient.cpp",
+  "file": "D:/code/zero-one-09oa/oa-cpp/lib-common/src/NacosClient.cpp",
+  "output": "lib-common/CMakeFiles/lib-common.dir/src/NacosClient.cpp.obj"
+},
+{
+  "directory": "D:/code/zero-one-09oa/oa-cpp/build/lib-common",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE -DOATPP_SWAGGER_RES_PATH=\\\"res\\\" -DOATPP_SWAGGER_SERVICE_NAME=\"\\\"zero-one-oa for windows\\\"\" -DUSE_DFS -DUSE_MONGO -DUSE_PDF -DUSE_REDIS -DUSE_ROCKETMQ -DUSE_XLNT -DUSE_YML @CMakeFiles/lib-common.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\lib-common.dir\\src\\PdfComponent.cpp.obj -c D:\\code\\zero-one-09oa\\oa-cpp\\lib-common\\src\\PdfComponent.cpp",
+  "file": "D:/code/zero-one-09oa/oa-cpp/lib-common/src/PdfComponent.cpp",
+  "output": "lib-common/CMakeFiles/lib-common.dir/src/PdfComponent.cpp.obj"
+},
+{
+  "directory": "D:/code/zero-one-09oa/oa-cpp/build/lib-common",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE -DOATPP_SWAGGER_RES_PATH=\\\"res\\\" -DOATPP_SWAGGER_SERVICE_NAME=\"\\\"zero-one-oa for windows\\\"\" -DUSE_DFS -DUSE_MONGO -DUSE_PDF -DUSE_REDIS -DUSE_ROCKETMQ -DUSE_XLNT -DUSE_YML @CMakeFiles/lib-common.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\lib-common.dir\\src\\RedisClient.cpp.obj -c D:\\code\\zero-one-09oa\\oa-cpp\\lib-common\\src\\RedisClient.cpp",
+  "file": "D:/code/zero-one-09oa/oa-cpp/lib-common/src/RedisClient.cpp",
+  "output": "lib-common/CMakeFiles/lib-common.dir/src/RedisClient.cpp.obj"
+},
+{
+  "directory": "D:/code/zero-one-09oa/oa-cpp/build/lib-common",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE -DOATPP_SWAGGER_RES_PATH=\\\"res\\\" -DOATPP_SWAGGER_SERVICE_NAME=\"\\\"zero-one-oa for windows\\\"\" -DUSE_DFS -DUSE_MONGO -DUSE_PDF -DUSE_REDIS -DUSE_ROCKETMQ -DUSE_XLNT -DUSE_YML @CMakeFiles/lib-common.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\lib-common.dir\\src\\RocketClient.cpp.obj -c D:\\code\\zero-one-09oa\\oa-cpp\\lib-common\\src\\RocketClient.cpp",
+  "file": "D:/code/zero-one-09oa/oa-cpp/lib-common/src/RocketClient.cpp",
+  "output": "lib-common/CMakeFiles/lib-common.dir/src/RocketClient.cpp.obj"
+},
+{
+  "directory": "D:/code/zero-one-09oa/oa-cpp/build/lib-common",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE -DOATPP_SWAGGER_RES_PATH=\\\"res\\\" -DOATPP_SWAGGER_SERVICE_NAME=\"\\\"zero-one-oa for windows\\\"\" -DUSE_DFS -DUSE_MONGO -DUSE_PDF -DUSE_REDIS -DUSE_ROCKETMQ -DUSE_XLNT -DUSE_YML @CMakeFiles/lib-common.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\lib-common.dir\\src\\SimpleDateTimeFormat.cpp.obj -c D:\\code\\zero-one-09oa\\oa-cpp\\lib-common\\src\\SimpleDateTimeFormat.cpp",
+  "file": "D:/code/zero-one-09oa/oa-cpp/lib-common/src/SimpleDateTimeFormat.cpp",
+  "output": "lib-common/CMakeFiles/lib-common.dir/src/SimpleDateTimeFormat.cpp.obj"
+},
+{
+  "directory": "D:/code/zero-one-09oa/oa-cpp/build/lib-common",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE -DOATPP_SWAGGER_RES_PATH=\\\"res\\\" -DOATPP_SWAGGER_SERVICE_NAME=\"\\\"zero-one-oa for windows\\\"\" -DUSE_DFS -DUSE_MONGO -DUSE_PDF -DUSE_REDIS -DUSE_ROCKETMQ -DUSE_XLNT -DUSE_YML @CMakeFiles/lib-common.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\lib-common.dir\\src\\SnowFlake.cpp.obj -c D:\\code\\zero-one-09oa\\oa-cpp\\lib-common\\src\\SnowFlake.cpp",
+  "file": "D:/code/zero-one-09oa/oa-cpp/lib-common/src/SnowFlake.cpp",
+  "output": "lib-common/CMakeFiles/lib-common.dir/src/SnowFlake.cpp.obj"
+},
+{
+  "directory": "D:/code/zero-one-09oa/oa-cpp/build/lib-common",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE -DOATPP_SWAGGER_RES_PATH=\\\"res\\\" -DOATPP_SWAGGER_SERVICE_NAME=\"\\\"zero-one-oa for windows\\\"\" -DUSE_DFS -DUSE_MONGO -DUSE_PDF -DUSE_REDIS -DUSE_ROCKETMQ -DUSE_XLNT -DUSE_YML @CMakeFiles/lib-common.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\lib-common.dir\\src\\StringUtil.cpp.obj -c D:\\code\\zero-one-09oa\\oa-cpp\\lib-common\\src\\StringUtil.cpp",
+  "file": "D:/code/zero-one-09oa/oa-cpp/lib-common/src/StringUtil.cpp",
+  "output": "lib-common/CMakeFiles/lib-common.dir/src/StringUtil.cpp.obj"
+},
+{
+  "directory": "D:/code/zero-one-09oa/oa-cpp/build/lib-common",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE -DOATPP_SWAGGER_RES_PATH=\\\"res\\\" -DOATPP_SWAGGER_SERVICE_NAME=\"\\\"zero-one-oa for windows\\\"\" -DUSE_DFS -DUSE_MONGO -DUSE_PDF -DUSE_REDIS -DUSE_ROCKETMQ -DUSE_XLNT -DUSE_YML @CMakeFiles/lib-common.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\lib-common.dir\\src\\YamlHelper.cpp.obj -c D:\\code\\zero-one-09oa\\oa-cpp\\lib-common\\src\\YamlHelper.cpp",
+  "file": "D:/code/zero-one-09oa/oa-cpp/lib-common/src/YamlHelper.cpp",
+  "output": "lib-common/CMakeFiles/lib-common.dir/src/YamlHelper.cpp.obj"
+},
+{
+  "directory": "D:/code/zero-one-09oa/oa-cpp/build/lib-common",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE -DOATPP_SWAGGER_RES_PATH=\\\"res\\\" -DOATPP_SWAGGER_SERVICE_NAME=\"\\\"zero-one-oa for windows\\\"\" -DUSE_DFS -DUSE_MONGO -DUSE_PDF -DUSE_REDIS -DUSE_ROCKETMQ -DUSE_XLNT -DUSE_YML @CMakeFiles/lib-common.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\lib-common.dir\\src\\sms\\aliyun\\AliSmsSender.cpp.obj -c D:\\code\\zero-one-09oa\\oa-cpp\\lib-common\\src\\sms\\aliyun\\AliSmsSender.cpp",
+  "file": "D:/code/zero-one-09oa/oa-cpp/lib-common/src/sms/aliyun/AliSmsSender.cpp",
+  "output": "lib-common/CMakeFiles/lib-common.dir/src/sms/aliyun/AliSmsSender.cpp.obj"
+},
+{
+  "directory": "D:/code/zero-one-09oa/oa-cpp/build/arch-demo",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE -DHTTP_SERVER_DEMO -DOATPP_SWAGGER_RES_PATH=\\\"res\\\" -DOATPP_SWAGGER_SERVICE_NAME=\"\\\"zero-one-oa for windows\\\"\" -DUSE_DFS -DUSE_MONGO -DUSE_PDF -DUSE_REDIS -DUSE_ROCKETMQ -DUSE_XLNT -DUSE_YML @CMakeFiles/arch-demo.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\arch-demo.dir\\controller\\Router.cpp.obj -c D:\\code\\zero-one-09oa\\oa-cpp\\arch-demo\\controller\\Router.cpp",
+  "file": "D:/code/zero-one-09oa/oa-cpp/arch-demo/controller/Router.cpp",
+  "output": "arch-demo/CMakeFiles/arch-demo.dir/controller/Router.cpp.obj"
+},
+{
+  "directory": "D:/code/zero-one-09oa/oa-cpp/build/arch-demo",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE -DHTTP_SERVER_DEMO -DOATPP_SWAGGER_RES_PATH=\\\"res\\\" -DOATPP_SWAGGER_SERVICE_NAME=\"\\\"zero-one-oa for windows\\\"\" -DUSE_DFS -DUSE_MONGO -DUSE_PDF -DUSE_REDIS -DUSE_ROCKETMQ -DUSE_XLNT -DUSE_YML @CMakeFiles/arch-demo.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\arch-demo.dir\\controller\\SystemInterceptor.cpp.obj -c D:\\code\\zero-one-09oa\\oa-cpp\\arch-demo\\controller\\SystemInterceptor.cpp",
+  "file": "D:/code/zero-one-09oa/oa-cpp/arch-demo/controller/SystemInterceptor.cpp",
+  "output": "arch-demo/CMakeFiles/arch-demo.dir/controller/SystemInterceptor.cpp.obj"
+},
+{
+  "directory": "D:/code/zero-one-09oa/oa-cpp/build/arch-demo",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE -DHTTP_SERVER_DEMO -DOATPP_SWAGGER_RES_PATH=\\\"res\\\" -DOATPP_SWAGGER_SERVICE_NAME=\"\\\"zero-one-oa for windows\\\"\" -DUSE_DFS -DUSE_MONGO -DUSE_PDF -DUSE_REDIS -DUSE_ROCKETMQ -DUSE_XLNT -DUSE_YML @CMakeFiles/arch-demo.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\arch-demo.dir\\controller\\file\\FileController.cpp.obj -c D:\\code\\zero-one-09oa\\oa-cpp\\arch-demo\\controller\\file\\FileController.cpp",
+  "file": "D:/code/zero-one-09oa/oa-cpp/arch-demo/controller/file/FileController.cpp",
+  "output": "arch-demo/CMakeFiles/arch-demo.dir/controller/file/FileController.cpp.obj"
+},
+{
+  "directory": "D:/code/zero-one-09oa/oa-cpp/build/arch-demo",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE -DHTTP_SERVER_DEMO -DOATPP_SWAGGER_RES_PATH=\\\"res\\\" -DOATPP_SWAGGER_SERVICE_NAME=\"\\\"zero-one-oa for windows\\\"\" -DUSE_DFS -DUSE_MONGO -DUSE_PDF -DUSE_REDIS -DUSE_ROCKETMQ -DUSE_XLNT -DUSE_YML @CMakeFiles/arch-demo.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\arch-demo.dir\\controller\\sample\\SampleController.cpp.obj -c D:\\code\\zero-one-09oa\\oa-cpp\\arch-demo\\controller\\sample\\SampleController.cpp",
+  "file": "D:/code/zero-one-09oa/oa-cpp/arch-demo/controller/sample/SampleController.cpp",
+  "output": "arch-demo/CMakeFiles/arch-demo.dir/controller/sample/SampleController.cpp.obj"
+},
+{
+  "directory": "D:/code/zero-one-09oa/oa-cpp/build/arch-demo",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE -DHTTP_SERVER_DEMO -DOATPP_SWAGGER_RES_PATH=\\\"res\\\" -DOATPP_SWAGGER_SERVICE_NAME=\"\\\"zero-one-oa for windows\\\"\" -DUSE_DFS -DUSE_MONGO -DUSE_PDF -DUSE_REDIS -DUSE_ROCKETMQ -DUSE_XLNT -DUSE_YML @CMakeFiles/arch-demo.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\arch-demo.dir\\controller\\user\\UserController.cpp.obj -c D:\\code\\zero-one-09oa\\oa-cpp\\arch-demo\\controller\\user\\UserController.cpp",
+  "file": "D:/code/zero-one-09oa/oa-cpp/arch-demo/controller/user/UserController.cpp",
+  "output": "arch-demo/CMakeFiles/arch-demo.dir/controller/user/UserController.cpp.obj"
+},
+{
+  "directory": "D:/code/zero-one-09oa/oa-cpp/build/arch-demo",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE -DHTTP_SERVER_DEMO -DOATPP_SWAGGER_RES_PATH=\\\"res\\\" -DOATPP_SWAGGER_SERVICE_NAME=\"\\\"zero-one-oa for windows\\\"\" -DUSE_DFS -DUSE_MONGO -DUSE_PDF -DUSE_REDIS -DUSE_ROCKETMQ -DUSE_XLNT -DUSE_YML @CMakeFiles/arch-demo.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\arch-demo.dir\\controller\\ws\\WSInstanceListener.cpp.obj -c D:\\code\\zero-one-09oa\\oa-cpp\\arch-demo\\controller\\ws\\WSInstanceListener.cpp",
+  "file": "D:/code/zero-one-09oa/oa-cpp/arch-demo/controller/ws/WSInstanceListener.cpp",
+  "output": "arch-demo/CMakeFiles/arch-demo.dir/controller/ws/WSInstanceListener.cpp.obj"
+},
+{
+  "directory": "D:/code/zero-one-09oa/oa-cpp/build/arch-demo",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE -DHTTP_SERVER_DEMO -DOATPP_SWAGGER_RES_PATH=\\\"res\\\" -DOATPP_SWAGGER_SERVICE_NAME=\"\\\"zero-one-oa for windows\\\"\" -DUSE_DFS -DUSE_MONGO -DUSE_PDF -DUSE_REDIS -DUSE_ROCKETMQ -DUSE_XLNT -DUSE_YML @CMakeFiles/arch-demo.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\arch-demo.dir\\controller\\ws\\WSListener.cpp.obj -c D:\\code\\zero-one-09oa\\oa-cpp\\arch-demo\\controller\\ws\\WSListener.cpp",
+  "file": "D:/code/zero-one-09oa/oa-cpp/arch-demo/controller/ws/WSListener.cpp",
+  "output": "arch-demo/CMakeFiles/arch-demo.dir/controller/ws/WSListener.cpp.obj"
+},
+{
+  "directory": "D:/code/zero-one-09oa/oa-cpp/build/arch-demo",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE -DHTTP_SERVER_DEMO -DOATPP_SWAGGER_RES_PATH=\\\"res\\\" -DOATPP_SWAGGER_SERVICE_NAME=\"\\\"zero-one-oa for windows\\\"\" -DUSE_DFS -DUSE_MONGO -DUSE_PDF -DUSE_REDIS -DUSE_ROCKETMQ -DUSE_XLNT -DUSE_YML @CMakeFiles/arch-demo.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\arch-demo.dir\\dao\\sample\\SampleDAO.cpp.obj -c D:\\code\\zero-one-09oa\\oa-cpp\\arch-demo\\dao\\sample\\SampleDAO.cpp",
+  "file": "D:/code/zero-one-09oa/oa-cpp/arch-demo/dao/sample/SampleDAO.cpp",
+  "output": "arch-demo/CMakeFiles/arch-demo.dir/dao/sample/SampleDAO.cpp.obj"
+},
+{
+  "directory": "D:/code/zero-one-09oa/oa-cpp/build/arch-demo",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE -DHTTP_SERVER_DEMO -DOATPP_SWAGGER_RES_PATH=\\\"res\\\" -DOATPP_SWAGGER_SERVICE_NAME=\"\\\"zero-one-oa for windows\\\"\" -DUSE_DFS -DUSE_MONGO -DUSE_PDF -DUSE_REDIS -DUSE_ROCKETMQ -DUSE_XLNT -DUSE_YML @CMakeFiles/arch-demo.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\arch-demo.dir\\main.cpp.obj -c D:\\code\\zero-one-09oa\\oa-cpp\\arch-demo\\main.cpp",
+  "file": "D:/code/zero-one-09oa/oa-cpp/arch-demo/main.cpp",
+  "output": "arch-demo/CMakeFiles/arch-demo.dir/main.cpp.obj"
+},
+{
+  "directory": "D:/code/zero-one-09oa/oa-cpp/build/arch-demo",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE -DHTTP_SERVER_DEMO -DOATPP_SWAGGER_RES_PATH=\\\"res\\\" -DOATPP_SWAGGER_SERVICE_NAME=\"\\\"zero-one-oa for windows\\\"\" -DUSE_DFS -DUSE_MONGO -DUSE_PDF -DUSE_REDIS -DUSE_ROCKETMQ -DUSE_XLNT -DUSE_YML @CMakeFiles/arch-demo.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\arch-demo.dir\\service\\sample\\SampleService.cpp.obj -c D:\\code\\zero-one-09oa\\oa-cpp\\arch-demo\\service\\sample\\SampleService.cpp",
+  "file": "D:/code/zero-one-09oa/oa-cpp/arch-demo/service/sample/SampleService.cpp",
+  "output": "arch-demo/CMakeFiles/arch-demo.dir/service/sample/SampleService.cpp.obj"
+},
+{
+  "directory": "D:/code/zero-one-09oa/oa-cpp/build/oa-c5-base",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE -DOATPP_SWAGGER_RES_PATH=\\\"res\\\" -DOATPP_SWAGGER_SERVICE_NAME=\"\\\"zero-one-oa for windows\\\"\" -DUSE_DFS -DUSE_MONGO -DUSE_PDF -DUSE_REDIS -DUSE_ROCKETMQ -DUSE_XLNT -DUSE_YML @CMakeFiles/oa-c5-base.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\oa-c5-base.dir\\controller\\FormTemplate\\FormTemplateController.cpp.obj -c D:\\code\\zero-one-09oa\\oa-cpp\\oa-c5-base\\controller\\FormTemplate\\FormTemplateController.cpp",
+  "file": "D:/code/zero-one-09oa/oa-cpp/oa-c5-base/controller/FormTemplate/FormTemplateController.cpp",
+  "output": "oa-c5-base/CMakeFiles/oa-c5-base.dir/controller/FormTemplate/FormTemplateController.cpp.obj"
+},
+{
+  "directory": "D:/code/zero-one-09oa/oa-cpp/build/oa-c5-base",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE -DOATPP_SWAGGER_RES_PATH=\\\"res\\\" -DOATPP_SWAGGER_SERVICE_NAME=\"\\\"zero-one-oa for windows\\\"\" -DUSE_DFS -DUSE_MONGO -DUSE_PDF -DUSE_REDIS -DUSE_ROCKETMQ -DUSE_XLNT -DUSE_YML @CMakeFiles/oa-c5-base.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\oa-c5-base.dir\\controller\\FormTemplateDetails\\FormTemplateDetailsController.cpp.obj -c D:\\code\\zero-one-09oa\\oa-cpp\\oa-c5-base\\controller\\FormTemplateDetails\\FormTemplateDetailsController.cpp",
+  "file": "D:/code/zero-one-09oa/oa-cpp/oa-c5-base/controller/FormTemplateDetails/FormTemplateDetailsController.cpp",
+  "output": "oa-c5-base/CMakeFiles/oa-c5-base.dir/controller/FormTemplateDetails/FormTemplateDetailsController.cpp.obj"
+},
+{
+  "directory": "D:/code/zero-one-09oa/oa-cpp/build/oa-c5-base",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE -DOATPP_SWAGGER_RES_PATH=\\\"res\\\" -DOATPP_SWAGGER_SERVICE_NAME=\"\\\"zero-one-oa for windows\\\"\" -DUSE_DFS -DUSE_MONGO -DUSE_PDF -DUSE_REDIS -DUSE_ROCKETMQ -DUSE_XLNT -DUSE_YML @CMakeFiles/oa-c5-base.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\oa-c5-base.dir\\controller\\Router.cpp.obj -c D:\\code\\zero-one-09oa\\oa-cpp\\oa-c5-base\\controller\\Router.cpp",
+  "file": "D:/code/zero-one-09oa/oa-cpp/oa-c5-base/controller/Router.cpp",
+  "output": "oa-c5-base/CMakeFiles/oa-c5-base.dir/controller/Router.cpp.obj"
+},
+{
+  "directory": "D:/code/zero-one-09oa/oa-cpp/build/oa-c5-base",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE -DOATPP_SWAGGER_RES_PATH=\\\"res\\\" -DOATPP_SWAGGER_SERVICE_NAME=\"\\\"zero-one-oa for windows\\\"\" -DUSE_DFS -DUSE_MONGO -DUSE_PDF -DUSE_REDIS -DUSE_ROCKETMQ -DUSE_XLNT -DUSE_YML @CMakeFiles/oa-c5-base.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\oa-c5-base.dir\\controller\\SystemInterceptor.cpp.obj -c D:\\code\\zero-one-09oa\\oa-cpp\\oa-c5-base\\controller\\SystemInterceptor.cpp",
+  "file": "D:/code/zero-one-09oa/oa-cpp/oa-c5-base/controller/SystemInterceptor.cpp",
+  "output": "oa-c5-base/CMakeFiles/oa-c5-base.dir/controller/SystemInterceptor.cpp.obj"
+},
+{
+  "directory": "D:/code/zero-one-09oa/oa-cpp/build/oa-c5-base",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE -DOATPP_SWAGGER_RES_PATH=\\\"res\\\" -DOATPP_SWAGGER_SERVICE_NAME=\"\\\"zero-one-oa for windows\\\"\" -DUSE_DFS -DUSE_MONGO -DUSE_PDF -DUSE_REDIS -DUSE_ROCKETMQ -DUSE_XLNT -DUSE_YML @CMakeFiles/oa-c5-base.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\oa-c5-base.dir\\main.cpp.obj -c D:\\code\\zero-one-09oa\\oa-cpp\\oa-c5-base\\main.cpp",
+  "file": "D:/code/zero-one-09oa/oa-cpp/oa-c5-base/main.cpp",
+  "output": "oa-c5-base/CMakeFiles/oa-c5-base.dir/main.cpp.obj"
+}
+]

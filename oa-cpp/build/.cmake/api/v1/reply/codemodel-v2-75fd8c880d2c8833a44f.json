@@ -1,0 +1,182 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "lib-oatpp",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-lib-oatpp-Debug-afad0854893b2846a4a5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lib-oatpp",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "lib-mysql",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-lib-mysql-Debug-2c8979a41fddc08cb762.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lib-mysql",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "lib-common",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-lib-common-Debug-7c74900fe10565a30159.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lib-common",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "arch-demo",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-arch-demo-Debug-cb050f02aab28da6ca9a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "arch-demo",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "oa-c5-base",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-oa-c5-base-Debug-636b1e2109c89a17d1d5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "oa-c5-base",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					],
+					"name" : "zero-one-oa",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 4,
+					"id" : "arch-demo::@e06a1664127b6df4d106",
+					"jsonFile" : "target-arch-demo-Debug-e6f91fdfd5cec9326168.json",
+					"name" : "arch-demo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "lib-common::@8e99caf9bb321a2108e9",
+					"jsonFile" : "target-lib-common-Debug-b68a282353c233057b8e.json",
+					"name" : "lib-common",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "lib-mysql::@3555f7f0026a08b11902",
+					"jsonFile" : "target-lib-mysql-Debug-85909045acb1fcf19689.json",
+					"name" : "lib-mysql",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "lib-oatpp::@cb39475bbd008e12486c",
+					"jsonFile" : "target-lib-oatpp-Debug-073bce7ee6005da92b16.json",
+					"name" : "lib-oatpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "oa-c5-base::@48cd62ff4c8fedb220f8",
+					"jsonFile" : "target-oa-c5-base-Debug-c02fec103c91fa26f106.json",
+					"name" : "oa-c5-base",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/code/zero-one-09oa/oa-cpp/build",
+		"source" : "D:/code/zero-one-09oa/oa-cpp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
