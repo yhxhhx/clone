@@ -64,7 +64,7 @@ std::list<SampleDO> SampleDAO::selectByName(const string& name)
 	SampleMapper mapper;
 	return sqlSession->executeQuery<SampleDO, SampleMapper>(sql, mapper, "%s", name);
 }
-
+ 
 uint64_t SampleDAO::insert(const SampleDO& iObj)
 {
 	string sql = "INSERT INTO `sample` (`name`, `sex`, `age`) VALUES (?, ?, ?)";

@@ -23,5 +23,10 @@
 #include "ApiHelper.h"
 #include "../Macros.h"
 #include "ServerInfo.h"
+#include"./dto/InformationDTO.h"
+#include"./query/InformationQuery.h"
+#include"./vo/InformationVO.h"
+#include"./do/InformationDO.h"
+#include"./do/InformationUnconsumedMessageMapper.h"
 
 #endif // !_GLOBAL_INCLUDE_

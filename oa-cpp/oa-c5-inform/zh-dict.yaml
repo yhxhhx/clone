@@ -1,0 +1,20 @@
+Information:
+ field:
+  id:  ID
+  name: 姓名
+  createTime: 创建时间
+  sequence: 序列
+  updateTime: 更新时间
+  distributeFactor: 分发因素 
+  body: 数据体
+  consumed: 消息消耗状态
+  consumer: 消耗者
+  instant: 立即值 
+  person: 归属人
+  properties: 特性
+  title: 标题
+  type: 类型 
+  target_status: 目标消息状态
+ get:
+   unconsumedMessage: 未读信息获取
+   modifyMessageStatus:  修改信息状态

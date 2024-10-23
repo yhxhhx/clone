@@ -299,6 +299,7 @@ public:
 			pstmt = conn->prepareStatement(sql);
 			//2 处理参数
 			SQL_ARG_EXEC_2(pstmt, fmt);
+
 			//3 执行查询
 			res = pstmt->executeQuery();
 			//4 处理查询结果
@@ -343,6 +344,7 @@ public:
 					list.push_back(mapper.mapper(res));
 				}
 			},
+
 			[](const std::exception& e){
 				cerr << "ExecuteQuery Exception. " << e.what() << endl;
 			},

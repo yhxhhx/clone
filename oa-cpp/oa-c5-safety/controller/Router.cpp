@@ -22,6 +22,8 @@
 #include "PersonPwd/PersonPwdInfoController.h"
 #include "password/admin/AdminPwdController.h"
 
+#include"LoginController.h"
+
 #ifdef HTTP_SERVER_DEMO
 #include "user/UserController.h"
 #include "sample/SampleController.h"
@@ -31,13 +33,13 @@
 
 #include "controller/login/setting/LoginPreserveController.h"
 
-// å¦‚æžœå®šä¹‰äº†å…³é—­Swaggeræ–‡æ¡£å®
+// Èç¹û¶¨ÒåÁË¹Ø±ÕSwaggerÎÄµµºê
 #ifdef CLOSE_SWAGGER_DOC
-// ç®€åŒ–ç»‘å®šæŽ§åˆ¶å™¨å®å®šä¹‰
+// ¼ò»¯°ó¶¨¿ØÖÆÆ÷ºê¶¨Òå
 #define ROUTER_SIMPLE_BIND(__CLASS__) \
 router->addController(__CLASS__::createShared())
 #else
-// ç®€åŒ–ç»‘å®šæŽ§åˆ¶å™¨å®å®šä¹‰
+// ¼ò»¯°ó¶¨¿ØÖÆÆ÷ºê¶¨Òå
 #define ROUTER_SIMPLE_BIND(__CLASS__) \
 BIND_CONTROLLER(docEndpoints, router, __CLASS__)
 #endif
@@ -54,23 +56,24 @@ void Router::initRouter()
 	createSampleRouter();
 #endif
 
-	//#TIP :ç³»ç»Ÿæ‰©å±•è·¯ç”±å®šä¹‰ï¼Œå†™åœ¨è¿™ä¸ªåŽé¢
+	//#TIP :ÏµÍ³À©Õ¹Â·ÓÉ¶¨Òå£¬Ð´ÔÚÕâ¸öºóÃæ
 	ROUTER_SIMPLE_BIND(AdminPwdController);
 	ROUTER_SIMPLE_BIND(LoginPreserveController);
 	ROUTER_SIMPLE_BIND(PersonPwdInfoController);
+	ROUTER_SIMPLE_BIND(LoginController);
 }
 
 #ifdef HTTP_SERVER_DEMO
 void Router::createSampleRouter()
 {
-	// ç»‘å®šç¤ºä¾‹æŽ§åˆ¶å™¨
+	// °ó¶¨Ê¾Àý¿ØÖÆÆ÷
 	ROUTER_SIMPLE_BIND(SampleController);
-	// ç»‘å®šç”¨æˆ·æŽ§åˆ¶å™¨
+	// °ó¶¨ÓÃ»§¿ØÖÆÆ÷
 	ROUTER_SIMPLE_BIND(UserController);
-	// ç»‘å®šæ–‡ä»¶æŽ§åˆ¶å™¨
+	// °ó¶¨ÎÄ¼þ¿ØÖÆÆ÷
 	ROUTER_SIMPLE_BIND(FileController);
 	
-	// ç»‘å®šWebSocketæŽ§åˆ¶å™¨
+	// °ó¶¨WebSocket¿ØÖÆÆ÷
 	router->addController(WSContorller::createShared());
 }
 #endif

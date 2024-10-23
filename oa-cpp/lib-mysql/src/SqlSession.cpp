@@ -43,6 +43,7 @@ int SqlSession::update(const string& sql, const char* fmt, va_list args)
 		pstmt = conn->prepareStatement(sql);
 		//2 处理参数
 		std::string curr(fmt);
+		//cout << curr << endl;
 		SQL_ARG_EXEC_1(pstmt, curr, args);
 		//3 执行数据操作
 		int row = pstmt->executeUpdate();

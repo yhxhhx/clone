@@ -49,7 +49,6 @@ SamplePageDTO::Wrapper SampleService::listAll(const SampleQuery::Wrapper& query)
 // 		dto->age = sub.getAge();
 		ZO_STAR_DOMAIN_DO_TO_DTO(dto, sub, id, Id, name, Name, sex, Sex, age, Age)
 		pages->addData(dto);
-		
 	}
 	return pages;
 }
