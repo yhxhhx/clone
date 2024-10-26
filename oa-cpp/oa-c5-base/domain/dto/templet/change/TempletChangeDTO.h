@@ -10,7 +10,11 @@
 class TempletChangeDTO : public oatpp::DTO 
 {
 	DTO_INIT(TempletChangeDTO, DTO);
-    API_DTO_FIELD(Int64, xid, ZH_WORDS_GETTER("formTemplateDetails.field.xid"), true, 19865); // 表单模板ID
+    // 编号
+    DTO_FIELD(UInt64, xid);
+    DTO_FIELD_INFO(xid) {
+        info->description = ZH_WORDS_GETTER("formTemplateDetails.field.xid");
+    }
     API_DTO_FIELD(String, xcreateTime, ZH_WORDS_GETTER("formTemplateDetails.field.xcreateTime"), true, "2022-01-01 00:00:00"); // 创建时间
     API_DTO_FIELD(String, xsequence, ZH_WORDS_GETTER("formTemplateDetails.field.xsequence"), true, "22"); // 序列号
     API_DTO_FIELD(String, xupdateTime, ZH_WORDS_GETTER("formTemplateDetails.field.xupdateTime"), true, "2022-01-01 00:00:00"); // 更新时间

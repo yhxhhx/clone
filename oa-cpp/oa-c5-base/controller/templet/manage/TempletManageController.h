@@ -21,7 +21,7 @@ public: // 定义接口
 
 private: // 定义接口执行函数
 	// 执行修改表单模板
-	StringJsonVO::Wrapper executeModifyTempletInfo(const TempletChangeDTO::Wrapper& dto);
+	Uint64JsonVO::Wrapper executeModifyTempletInfo(const TempletChangeDTO::Wrapper& dto);
 };
 
 
