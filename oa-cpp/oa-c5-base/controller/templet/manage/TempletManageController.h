@@ -15,8 +15,8 @@ class TempletManageController : public oatpp::web::server::api::ApiController
 public: // 定义接口
 
 	// 修改表单模板接口
-	API_DEF_ENDPOINT_INFO_AUTH(ZH_WORDS_GETTER("templet.put.summary"), modifyTempletInfo, StringJsonVO::Wrapper);
-	API_HANDLER_ENDPOINT_AUTH(API_M_PUT, "/templet-manage/templet-info", modifyTempletInfo, BODY_DTO(TempletChangeDTO::Wrapper, dto), executeModifyTempletInfo(dto));
+	API_DEF_ENDPOINT_INFO_AUTH(ZH_WORDS_GETTER("formTemplate.put.summary"), modifyTempletInfo, StringJsonVO::Wrapper);
+	API_HANDLER_ENDPOINT_AUTH(API_M_PUT, "/templet-change/templet-info", modifyTempletInfo, BODY_DTO(TempletChangeDTO::Wrapper, dto), executeModifyTempletInfo(dto));
 
 
 private: // 定义接口执行函数

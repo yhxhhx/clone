@@ -29,10 +29,9 @@
 #include "system/setting/SysSettingController.h"
 #include "system/setting/SystemSettingController.h"
 #include "templet/manage/TempletManageController.h"
-#include "templet/add/TempletAddController.h"
-#include "templet/remove/TempletRemoveController.h"
 #include "FormTemplate/FormTemplateController.h"
 #include "FormTemplateDetails/FormTemplateDetailsController.h"
+#include"formTemplateBuilt/formTemplateBuiltController.h"
 
 // 如果定义了关闭Swagger文档宏
 #ifdef CLOSE_SWAGGER_DOC
@@ -60,10 +59,9 @@ void Router::initRouter()
 	//#TIP :系统扩展路由定义，写在这个后面
 	ROUTER_SIMPLE_BIND(SystemSettingController);
 	ROUTER_SIMPLE_BIND(TempletManageController);
-	ROUTER_SIMPLE_BIND(TempletAddController);
-	ROUTER_SIMPLE_BIND(TempletRemoveController);
 	ROUTER_SIMPLE_BIND(SysSettingController);
 	ROUTER_SIMPLE_BIND(FormTemplateController);
+	ROUTER_SIMPLE_BIND(formTemplateBuiltController);
 	//ROUTER_SIMPLE_BIND(FormTemplateDetailsController);
 }
 

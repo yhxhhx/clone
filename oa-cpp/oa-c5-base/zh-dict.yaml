@@ -9,53 +9,6 @@ system:
    version: 当前系统版本
    id: 数据唯一标识
 
-templet:
- post:
-  summary: 新增表单模板
- put:
-  summary: 修改表单模板
- delete:
-  summary: 删除表单模板
- basic:
-  field:
-   design: 设计
-   name: 名称
-   describe: 描述
-   classify: 分类
-   read: 是否只读
-   type: 表单样式
-   ico: 图标
-   print: 打印表单
-   srcipt: 脚本
-   style: 样式
-   property: 属性
-   css: CSS
-   language: 语言包
- commit:
-  field:
-   interface: 提交界面
-   write: 手写
-   width: 手写板宽度
-   length: 手写板长度
-   operate: 操作条
-   tip: 流传后提示框
-   location: 提示框位置
-   time: 提示框几秒后自动关闭
-   after: 流转后
-   suggestion: 校验意见
-   route: 校验路由
-   roam: 流传校验
-   other: 校验其他流转方式
- add:
-  field:
-   name: 模板名称
-   classify: 模板分类
-   describe: 模板描述
- remove:
-  field:
-   confirm: 确认是否删除表单
-   name: 表单模板名称
-
 
 sys:
  setting:
@@ -69,6 +22,12 @@ sys:
 
 
 formTemplate:
+  post:
+   summary: 新增表单模板
+  put:
+    summary: 修改表单模板
+  delete: 
+    summary: 删除表单模板
   field:
     xid: 表单模板ID
     xcreateTime: 创建时间
