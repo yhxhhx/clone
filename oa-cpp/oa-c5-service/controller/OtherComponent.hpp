@@ -28,6 +28,9 @@
 #include "oatpp/network/tcp/client/ConnectionProvider.hpp"
 #endif
 
+#include "oatpp-websocket/ConnectionHandler.hpp"
+#include "controller/WebSocket/WSInstanceListener.h"
+
 /**
  * 其它Oatpp组件注册附件，后续如果需要附加其它组件可以在这里进行外部定义
  */
@@ -47,7 +50,11 @@ class OtherComponent : public AbstractComponentReg
 		}());
 #endif
 	// #TIP: 项目中需要注册其他组件在下面书写组件注册代码
-
+	OATPP_CREATE_COMPONENT(std::shared_ptr<oatpp::network::ConnectionHandler>, websocketConnectionHandler)("sendMessage", [] {
+		auto connectionHandler = oatpp::websocket::ConnectionHandler::createShared();
+	connectionHandler->setSocketInstanceListener(std::make_shared<WSInstanceListener>());
+	return connectionHandler;
+		}());
 };
 
 #endif // _OTHERCOMMPONENT_H_

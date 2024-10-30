@@ -9,3 +9,13 @@
  typename:
   massage: 短信
   mail: 邮件   
+
+
+system:
+ field:
+  id: 用户id
+  title: 标题
+  description: 描述
+  addDescription: 扩展描述
+  status: 状态
+  time: 时间

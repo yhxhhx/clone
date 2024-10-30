@@ -21,7 +21,7 @@
 #define _MACROS_
 
 #ifndef TEST_NS_ADDR
-#define TEST_NS_ADDR "192.168.230.233:8848"
+#define TEST_NS_ADDR "192.168.163.131:8848"
 #endif
 
 #ifndef TEST_NS_NAMESPACE

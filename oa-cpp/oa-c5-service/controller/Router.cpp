@@ -19,6 +19,7 @@
 #include "stdafx.h"
 #include "Router.h"
 #include "ApiHelper.h"
+#include "controller/WebSocket/WSController.h"
 
 #ifdef HTTP_SERVER_DEMO
 #endif
@@ -64,3 +65,10 @@ void Router::createSampleRouter()
 	router->addController(WSContorller::createShared());
 }
 #endif
+
+void Router::createSampleRouter()
+{
+
+	// °ó¶¨WebSocket¿ØÖÆÆ÷
+	router->addController(WSContorller::createShared());
+}

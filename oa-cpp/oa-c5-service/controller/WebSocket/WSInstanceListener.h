@@ -1,25 +1,29 @@
 #pragma once
-
 #ifndef _WSINSTANCELISTENER_H_
 #define _WSINSTANCELISTENER_H_
 #include "oatpp-websocket/ConnectionHandler.hpp"
-#include "oatpp-websocket/WebSocket.hpp"
+#include <map>
 
 /**
- * å®šä¹‰WSå®ä¾‹ç›‘å¬å™¨
+ * ¶¨ÒåÊ¾ÀıWSÊµÀı¼àÌıÆ÷
  */
 class WSInstanceListener : public oatpp::websocket::ConnectionHandler::SocketInstanceListener
 {
 private:
 	static constexpr const char* TAG = "Server_WSInstanceListener";
 public:
-	//è¿æ¥å®¢æˆ·ç«¯çš„è®¡æ•°å™¨
+	/**
+	 * Counter for connected clients.
+	 */
 	static std::atomic<v_int32> SOCKETS;
-
+	// ¶¨ÒåÒ»¸öÁ¬½Ó¶ÔÏó³Ø
+	std::map<std::string, const WebSocket*> conn_pool;
+	// ¶¨ÒåÒ»¸öËø¶ÔÏó
+	std::mutex instance_mutex;
 public:
-	// å½“websocketå®ä¾‹åˆ›å»ºæ—¶è°ƒç”¨
+	// µ±socketÊµÀı´´½¨Ê±µ÷ÓÃ
 	void onAfterCreate(const WebSocket& socket, const std::shared_ptr<const ParameterMap>& params) override;
-	// å½“websocketå®ä¾‹é”€æ¯å‰è°ƒç”¨
+	// µ±socketÊµÀıÏú»ÙÇ°µ÷ÓÃ
 	void onBeforeDestroy(const WebSocket& socket) override;
 };
 
