@@ -3,14 +3,6 @@
 #include "WSListener.h"
 #include "StringUtil.h"
 
-#ifndef TEST_NS_ADDR
-#define TEST_NS_ADDR "192.168.163.131:8848"
-#endif
-
-#ifndef TEST_NS_NAMESPACE
-#define TEST_NS_NAMESPACE "oa-dev"
-#endif
-
 // 定义一个锁对象
 std::mutex listener_mutex;
 
@@ -23,22 +15,6 @@ WSListener::WSListener(std::string id, std::map<std::string, const WebSocket*>* 
 {
 	this->id = id;
 	this->conn_pool = conn_pool;
-	// 获取配置，用于将未发送消息放到RocketMQ中的unsend主题中
-	NacosClient nacosClient(TEST_NS_ADDR, TEST_NS_NAMESPACE);
-#ifdef LINUX
-	YAML::Node node = nacosClient.getConfig("third-services.yaml");
-#else
-	YAML::Node node = nacosClient.getConfig("./conf/third-services.yaml");
-#endif
-	this->namesrv = YamlHelper().getString(&node, "rocket-mq.name-server");
-	this->rocketClient = new RocketClient(this->namesrv);
-	this->WbSubscribe(); // 订阅和添加监听器
-}
-
-WSListener::~WSListener() {
-	this->rocketClient->unsubscribe();
-	this->rocketClient->removeAllListener();
-	delete this->rocketClient;
 }
 
 void WSListener::onPing(const WebSocket& socket, const oatpp::String& message)
@@ -102,40 +78,15 @@ void WSListener::readMessage(const WebSocket& socket, v_uint8 opcode, p_char8 da
 	}
 }
 
-void WSListener::sendMessage(string Id, string msg) {
-	//群发
-	if (Id == "all") {
-		std::lock_guard<std::mutex> guard(listener_mutex);
-		for (auto one : *conn_pool) {
-			// 发送消息
-			one.second->sendOneFrameText(msg);
-		}
+
+void WSListener::SendNotification(const std::string& userId) {
+	std::lock_guard<std::mutex> guard(listener_mutex);
+	auto iter = conn_pool->find(userId);
+	if (iter != conn_pool->end()) {
+		std::string notification = "系统向你发送了消息，请注意查收";
+		iter->second->sendOneFrameText(notification);
 	}
-	//单发
 	else {
-		std::lock_guard<std::mutex> guard(listener_mutex);
-		auto iter = conn_pool->find(Id);
-		//用户在线
-		if (iter != conn_pool->end())
-		{
-			iter->second->sendOneFrameText(msg);
-		}
-		//用户不在线，放到unsend主题中
-		else {
-			string data = Id + msg;
-			rocketClient->productMsgSync("unsend", data);
-		}
+		std::cout << "用户 " << userId << " 未连接。" << std::endl;
 	}
-}
-
-void WSListener::receiveMessage(std::string payload) {
-	return;
-}
-
-
-void WSListener::WbSubscribe() {
-	//订阅主题
-	rocketClient->subscribe(topic);
-	//添加消息监听器
-	rocketClient->addListener(this);
 }
